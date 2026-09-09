@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>🎨龍騰 B1 L2 Goodbye, John 單片閃卡 造句 句型介紹 例句填空 文法選擇</title>
+<style>
+:root{
+  --blue:#E2F1FF; --purple:#F3E8FF; --pink:#FCE7F3; --yellow:#FFFBEB; --green:#ECFDF5;
+  --mint:#D9F7EF; --peach:#FFE8DC; --coffee:#4A3E3D; --coffee2:#6B5A59;
+  --bg:#FFFDF9; --line:#EADFF5; --stickyOffset:0px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; font-family:"Microsoft JhengHei","Heiti TC","Segoe UI",system-ui,sans-serif;
+  color:var(--coffee); background:
+    radial-gradient(1200px 400px at 10% -5%, #FFF0F7 0%, transparent 60%),
+    radial-gradient(900px 400px at 95% 0%, #E8F4FF 0%, transparent 55%),
+    var(--bg);
+  padding-bottom:120px; line-height:1.7; -webkit-text-size-adjust:100%;
+}
+canvas#fw{position:fixed;inset:0;pointer-events:none;z-index:90}
+header{
+  position:sticky; top:0; z-index:60; backdrop-filter:blur(10px);
+  background:rgba(255,255,255,.9); border-bottom:2px solid var(--line); padding:8px 12px;
+  transition:transform .25s;
+}
+header.up{transform:translateY(-110%)}
+.brand{display:flex;align-items:center;gap:8px;justify-content:space-between}
+.brand h1{font-size:14px;margin:0;font-weight:800;letter-spacing:.2px}
+.brand h1 b{color:#DB2777}
+.mini{font-size:11.5px;color:var(--coffee2);font-weight:700}
+.menu{
+  position:absolute;left:8px;right:8px;top:100%;margin-top:6px;z-index:80;
+  display:grid;grid-template-columns:repeat(2,1fr);gap:6px;
+  background:rgba(255,255,255,.97);border:2px solid var(--line);border-radius:18px;
+  padding:10px;box-shadow:0 14px 32px rgba(120,100,160,.22);max-height:70vh;overflow-y:auto;
+}
+.menu.hidden{display:none}
+.tab{border:2px solid var(--line);background:#fff;color:var(--coffee);border-radius:999px;
+  padding:7px 12px;font-size:13px;font-weight:800;cursor:pointer;transition:.18s;font-family:inherit}
+.tab:hover{transform:translateY(-2px)}
+.tab.on{background:linear-gradient(120deg,var(--blue),var(--purple));border-color:#C7B8F0}
+.iconbtn{border:2px solid var(--line);background:#fff;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:800;cursor:pointer;color:var(--coffee);font-family:inherit}
+main{max-width:940px;margin:0 auto;padding:14px}
+section.page{display:none;animation:fade .35s ease}
+section.page.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+h2.sec{font-size:20px;margin:6px 0 4px;font-weight:900}
+p.lead{font-size:13.5px;color:var(--coffee2);font-weight:700;margin:0 0 14px}
+.card{background:#fff;border:2px solid var(--line);border-radius:20px;padding:16px;margin-bottom:14px;box-shadow:0 6px 18px rgba(120,100,160,.07)}
+.hint{background:var(--yellow);border:2px solid #FDE68A;border-radius:16px;padding:10px 14px;font-size:13px;font-weight:800;margin-bottom:12px}
+.btn{border-radius:14px;padding:10px 16px;font-weight:900;font-size:14px;cursor:pointer;transition:.18s;color:var(--coffee);background:var(--blue);border:2px solid #BFDBFE;font-family:inherit}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(1px)}
+.btn.pink{background:var(--pink);border-color:#F9A8D4}
+.btn.green{background:var(--green);border-color:#A7F3D0}
+.btn.purple{background:var(--purple);border-color:#DDD6FE}
+.btn.sm{padding:6px 12px;font-size:12.5px;border-radius:10px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.num{display:inline-flex;min-width:26px;height:26px;align-items:center;justify-content:center;background:var(--purple);border:2px solid #DDD6FE;border-radius:999px;font-weight:900;font-size:12.5px;margin-right:8px}
+.q{border-top:2px dashed var(--line);padding:14px 0}
+.q:first-child{border-top:none}
+.stem{font-size:15px;font-weight:700;line-height:1.95}
+.zh{font-size:13px;color:var(--coffee2);font-weight:800;margin:4px 0}
+input.blank,textarea.ta{font-family:inherit;border:2px solid #DDD6FE;border-radius:12px;padding:8px 10px;font-size:15px;font-weight:800;color:var(--coffee);background:#fff;outline:none}
+input.blank{width:170px}
+input.blank:focus,textarea.ta:focus{border-color:#F9A8D4;box-shadow:0 0 0 3px #FCE7F3}
+textarea.ta{width:100%;min-height:80px}
+.ans{display:none;margin-top:10px;background:var(--green);border:2px solid #A7F3D0;border-radius:14px;padding:12px;font-size:14px;font-weight:700}
+.ans.show{display:block;animation:fade .3s}
+.ans b{color:#047857}
+.opt{display:block;width:100%;text-align:left;margin:6px 0;border:2px solid var(--line);background:#fff;border-radius:14px;padding:10px 14px;font-size:14.5px;font-weight:800;cursor:pointer;color:var(--coffee);transition:.15s;font-family:inherit}
+.opt:hover{background:var(--yellow);transform:translateX(3px)}
+.opt.right{background:#DCFCE7;border-color:#86EFAC}
+.opt.wrong{background:#FEE2E2;border-color:#FCA5A5}
+.scoreDot{position:fixed;right:12px;bottom:14px;z-index:70;width:46px;height:46px;border-radius:50%;border:2px solid #F9A8D4;background:rgba(255,255,255,.94);box-shadow:0 6px 18px rgba(200,120,180,.28);font-size:20px;line-height:1;cursor:pointer;transition:.25s;padding:0;display:flex;align-items:center;justify-content:center}
+.scorebar{position:fixed;right:12px;bottom:68px;z-index:70;background:rgba(255,255,255,.96);border:2px solid #F9A8D4;border-radius:16px;padding:8px 14px;font-size:13px;font-weight:900;box-shadow:0 8px 24px rgba(200,120,180,.25);display:flex;gap:8px;align-items:center;transition:.22s;max-width:70vw}
+.scorebar.away{opacity:0;pointer-events:none;transform:translateY(12px) scale(.92)}
+.scoreDot.away{opacity:0;pointer-events:none;transform:translateY(20px)}
+.pop{display:inline-block}
+@keyframes scorePop{0%{transform:scale(1)}50%{transform:scale(1.6)}100%{transform:scale(1)}}
+.pop.go{animation:scorePop .5s ease}
+#toast{position:fixed;left:50%;bottom:80px;transform:translateX(-50%);background:var(--coffee);color:#fff;padding:10px 18px;border-radius:999px;font-weight:800;font-size:13.5px;z-index:95;display:none;max-width:88vw;text-align:center}
+.fcwrap{perspective:1200px;max-width:520px;margin:0 auto}
+.fc{position:relative;width:100%;height:340px;cursor:pointer;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+.fc.flip{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:24px;border:4px solid #fff;padding:16px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 12px 28px rgba(120,100,160,.18)}
+.front{background:linear-gradient(150deg,var(--blue),var(--mint))}
+.back{background:linear-gradient(150deg,var(--pink),var(--peach));transform:rotateY(180deg);overflow-y:auto;display:block}
+.chip{background:rgba(255,255,255,.85);border-radius:999px;padding:3px 10px;font-size:11.5px;font-weight:900;display:inline-block}
+.word{font-size:29px;font-weight:900;text-align:center;margin:auto 0;word-break:break-word}
+.box{background:rgba(255,255,255,.88);border-radius:14px;padding:10px;margin-top:8px}
+.box .lbl{font-size:11px;font-weight:900;color:#7C3AED}
+select.sel{font-family:inherit;font-weight:900;border:2px solid #DDD6FE;border-radius:12px;padding:8px 10px;background:#fff;color:var(--coffee);font-size:14px}
+.bank{position:sticky;top:var(--stickyOffset);z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border:2px solid #DDD6FE;border-radius:18px;padding:10px;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;max-height:26vh;overflow-y:auto}
+.wchip{border:2px solid #BFDBFE;background:#fff;border-radius:999px;padding:6px 11px;font-size:13.5px;font-weight:800;cursor:pointer;font-family:inherit;color:var(--coffee)}
+.wchip.sel{background:var(--pink);border-color:#F472B6}
+.wchip.used{opacity:.32;pointer-events:none;text-decoration:line-through}
+.slot{display:inline-block;min-width:150px;border-bottom:3px dashed #C4B5FD;padding:2px 8px;font-weight:900;color:#BE185D;cursor:pointer;text-align:center}
+.slot.ok{border-bottom-color:#34D399;color:#047857}
+.slot.no{border-bottom-color:#F87171;color:#B91C1C}
+.qlist{max-height:56vh;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-right:4px}
+.board{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.cell{border:2px solid var(--line);border-radius:14px;padding:10px 6px;text-align:center;font-size:12px;font-weight:900;background:#fff;min-height:62px;display:flex;flex-direction:column;justify-content:center;gap:2px}
+.cell.here{background:linear-gradient(140deg,var(--yellow),var(--peach));border-color:#FBBF24;transform:scale(1.04)}
+.cell.done{background:var(--green);border-color:#A7F3D0}
+.dice{font-size:44px;text-align:center;margin:6px}
+table.gt{width:100%;border-collapse:collapse;font-size:13.5px}
+table.gt td,table.gt th{border:1px solid var(--line);padding:7px 9px;vertical-align:top}
+table.gt th{background:var(--purple);font-weight:900}
+.exline{display:flex;align-items:flex-start;gap:6px;flex-wrap:wrap;font-size:14px;font-weight:700;line-height:1.9;margin:5px 0;padding:6px 8px;background:var(--yellow);border-left:4px solid #FDE68A;border-radius:10px}
+.exline .exen{flex:1 1 200px}
+.tagline{font-size:12.5px;font-weight:900;color:#7C3AED;margin:14px 0 6px;border-left:5px solid #C4B5FD;padding-left:8px}
+.drop{font-family:inherit;font-weight:900;border:2px solid #F9A8D4;border-radius:10px;padding:3px 6px;background:#FFF7FB;color:#BE185D;font-size:14px}
+footer{text-align:center;font-size:12px;color:#9c8f8e;padding:20px 12px 0}
+@media(max-width:520px){.brand h1{font-size:12px}.board{grid-template-columns:repeat(3,1fr)}.word{font-size:24px}input.blank{width:130px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<canvas id="fw"></canvas>
+
+<header id="hd">
+  <div class="brand">
+    <h1>🎨龍騰 B1 L2 <b>Goodbye, John</b> 單片閃卡 造句 句型介紹 例句填空 文法選擇</h1>
+    <button class="iconbtn" id="menuBtn" onclick="toggleTabs()" aria-expanded="false">☰ 選單</button>
+  </div>
+  <div class="menu hidden" id="tabs"></div>
+</header>
+
+<main>
+  <!-- 1 FLASHCARDS -->
+  <section class="page on" id="p-fc">
+    <h2 class="sec">🃏 閃卡自學模式</h2>
+    <p class="lead">一次只出現一張卡片。點卡片翻面，看中文意思、搭配詞、課堂例句與同義／延伸補充。</p>
+    <div class="card">
+      <div class="row" style="justify-content:center">
+        <select class="sel" id="fcFilter" onchange="fcFilter()">
+          <option value="all">📚 全部內容</option>
+          <option value="vocabulary">1. 應用字彙</option>
+          <option value="idiom">2. 慣用語與片語</option>
+          <option value="recognize">3. 認識字彙</option>
+          <option value="grammar">4. 當課句型</option>
+        </select>
+      </div>
+      <div class="fcwrap" style="margin-top:14px">
+        <div class="fc" id="fcCard" onclick="fcFlipCard()">
+          <div class="face front">
+            <div class="row" style="justify-content:space-between">
+              <span class="chip" id="fcPos">n.</span><span class="chip" id="fcIdx">1 / 54</span>
+            </div>
+            <div class="word" id="fcWord">relationship</div>
+            <div style="text-align:center">
+              <div class="mini" style="margin-bottom:8px">💡 點擊卡片翻看中文意思與例句</div>
+              <button class="btn sm" data-say="__fcWord">🔊 聽發音 (1.0x)</button>
+            </div>
+          </div>
+          <div class="face back">
+            <div class="row" style="justify-content:space-between"><span class="chip">中文與例句</span><span class="chip">BACK</span></div>
+            <div style="text-align:center;font-size:19px;font-weight:900;margin:8px 0" id="fcCh"></div>
+            <div class="box"><div class="lbl">🎯 例句中的搭配詞／句型</div><div style="font-weight:900" id="fcTar"></div><div class="mini" id="fcTarCh"></div></div>
+            <div class="box"><div class="lbl" style="color:#2563EB">📝 課堂英文例句</div><div style="font-style:italic;font-size:13.5px;font-weight:700" id="fcEx"></div></div>
+            <div class="box"><div class="lbl" style="color:#047857">🌱 同義字／反義字／延伸補充</div><div style="font-size:13.5px;font-weight:700" id="fcSyn"></div></div>
+            <div style="text-align:center;margin-top:10px"><button class="btn sm pink" data-say="__fcEx">🔊 聽例句朗讀</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="justify-content:space-between;max-width:520px;margin:16px auto 0">
+        <button class="btn" onclick="fcMove(-1)">⏫ 上一個</button>
+        <button class="btn purple sm" onclick="fcFlipCard()">🔄 翻轉</button>
+        <button class="btn" onclick="fcMove(1)">⏬ 下一個</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 PRACTICE -->
+  <section class="page" id="p-wr">
+    <h2 class="sec">✍️ 搭配詞造句遊戲（Kahoot! 計分）</h2>
+    <p class="lead">每輪 10 題＝9 題搭配詞 ＋ 1 題當課句型，5 輪內絕不重複。造句正確 +200，句子有錯 −50，累計總分不歸零。</p>
+    <div class="hint">🎮 計分規則：正確 <b style="color:#047857">+200</b>／有錯 <b style="color:#DB2777">−50</b>，最低 0 分。📌 動詞時態小提醒：目標搭配詞若為動詞，寫成過去式／過去分詞／現在分詞皆視為正確，不會被判定拼字錯誤。</div>
+    <div class="card">
+      <div class="row" style="justify-content:space-between">
+        <div><span class="chip" style="background:var(--purple)">第 <b id="wrRound">1</b> / 5 輪</span></div>
+        <div><span class="chip" style="background:var(--blue)">本輪進度 <b id="wrIdx">1</b> / 10</span>
+        <span class="chip" style="background:var(--green)">本輪 <b id="wrRS">0</b> / 2000</span></div>
+      </div>
+      <div style="margin-top:12px">
+        <span class="chip" style="background:var(--pink)" id="wrPos"></span>
+        <div style="font-size:23px;font-weight:900;margin:6px 0" id="wrWord"></div>
+        <div class="zh" id="wrCh"></div>
+        <button class="btn sm" data-say="__wqEx">🔊 聽參考範例音</button>
+      </div>
+      <div class="hint" style="margin-top:12px">💡 必須使用這個搭配詞或句型：<div style="font-size:16px">「<span id="wrTar"></span>」</div><span class="mini" id="wrTarCh"></span></div>
+      <textarea class="ta" id="wrIn" placeholder="請在此打字輸入你的英文句子..."></textarea>
+      <div class="row" style="justify-content:flex-end;margin-top:8px">
+        <button class="btn pink" id="wrBtn" onclick="wrSubmit()">💌 送出批改</button>
+      </div>
+      <div id="wrFb"></div>
+    </div>
+    <div class="card" id="wrReview" style="display:none"></div>
+  </section>
+
+  <!-- 3 MATCH -->
+  <section class="page" id="p-mt">
+    <h2 class="sec">💡 字彙對對碰</h2>
+    <p class="lead">先點 Word Bank 的詞彙（變色代表已選中），再點【📝 中譯】旁邊的空格填入。想收回，直接點空格即可退回選項。題目隨機出現，不照題號順序。</p>
+    <div class="row" id="mtCats" style="margin-bottom:10px"></div>
+    <div class="bank"><div class="mini" style="margin-bottom:6px">🧺 Word Bank（點一下選取）<span id="mtAudioNote"></span></div><div class="chips" id="mtChips"></div></div>
+    <div class="card">
+      <div class="qlist" id="mtQs"></div>
+      <div class="row" style="margin-top:10px"><button class="btn green" onclick="mtCheck()">✅ Check answers</button><button class="btn sm" onclick="mtBuild()">🔄 換一組</button><span class="mini" id="mtScore"></span></div>
+      <div class="ans" id="mtAns"></div>
+    </div>
+  </section>
+
+  <!-- 4 PATTERN -->
+  <section class="page" id="p-sp">
+    <h2 class="sec">✍️ Sentence Pattern｜虛主詞 it ＋ 現在完成式</h2>
+    <p class="lead">It is + adj. (+ for sb.) + to VR....　／　S + have/has + p.p.（現在完成式三大功能）</p>
+    <div class="card" id="spNote"></div>
+    <div class="card"><div class="tagline">Practice A｜用句型與提示字造句</div><div id="spA"></div></div>
+    <div class="card"><div class="tagline">Practice B｜對話總結（It is...）</div><div id="spB"></div></div>
+    <div class="card"><div class="tagline">補充練習 A｜改寫下列句子（It is...）</div><div id="spC"></div></div>
+    <div class="card"><div class="tagline">補充練習 B｜翻譯題（It is...）</div><div id="spD"></div></div>
+    <div class="card"><div class="tagline">進階句型｜it 當 that 子句的虛主詞</div><div id="spE"></div></div>
+    <div class="card" id="spPerf"></div>
+    <div class="card"><div class="tagline">現在完成式 A｜填入適當的動詞形式</div><div id="spF"></div></div>
+    <div class="card"><div class="tagline">現在完成式 B｜翻譯下列句子</div><div id="spG"></div></div>
+  </section>
+
+  <!-- 5 CLOZE -->
+  <section class="page" id="p-cz">
+    <h2 class="sec">🧩 例句填空</h2>
+    <p class="lead">📌 每題作答完畢，按壓「✅ 檢查」即可進入此單元互動學習總分之累計。每次進頁面題目順序都會重新隨機排列。</p>
+    <div class="card"><div class="tagline">子單元 1｜單字搭配詞 Vocabulary</div><div id="czV"></div></div>
+    <div class="card"><div class="tagline">子單元 2｜慣用語與片語 Idioms and Phrases</div><div id="czI"></div></div>
+    <div class="card"><div class="tagline">子單元 3｜例句重要搭配詞 Guided Translation</div><div id="czC"></div></div>
+    <div class="card"><div class="tagline">子單元 4｜引導式翻譯</div><div id="czG"></div></div>
+    <div class="card"><div class="tagline">子單元 5｜連貫式翻譯（寫完按【✅ Check Answers】才顯示參考答案）</div><div id="czH"></div></div>
+  </section>
+
+  <!-- 6 WORDMEANING -->
+  <section class="page" id="p-wm">
+    <h2 class="sec">🔤 文意字彙</h2>
+    <p class="lead">依句意與字首字尾提示填入正確單字，寫完後點【📖 參考解答：】核對答案與繁體中文解析。</p>
+    <div class="card" id="wmBox"></div>
+  </section>
+
+  <!-- 7 GRAMMAR -->
+  <section class="page" id="p-gr">
+    <h2 class="sec">📐 課本與句型文法選擇</h2>
+    <p class="lead">四選一採按壓式作答：直接點選項即可。答完該題後點【📖 參考解答：】看答案與繁體中文詳解。</p>
+    <div class="card" id="grBox"></div>
+    <div class="card"><div class="tagline">📰 克漏字 Cloze｜Dear John（點文章中的空格出現下拉選單）</div><div id="clzText"></div><div id="clzAns"></div></div>
+    <div class="card"><div class="tagline">🔠 文意選填｜三篇（點選項填入，點空格可退回）</div><div id="selBox"></div></div>
+  </section>
+
+  <!-- 8 MONOPOLY -->
+  <section class="page" id="p-mo">
+    <h2 class="sec">🎲 摘要大富翁</h2>
+    <p class="lead">擲骰子前進，踩到的格子會抽出一題課文背景／象徵意義題（選擇題與簡答題混合）。走完全部格子就通關！</p>
+    <div class="card">
+      <div class="dice" id="moDice">🎲</div>
+      <div class="row" style="justify-content:center"><button class="btn purple" onclick="moRoll()">🎲 擲骰子</button><span class="mini" id="moStat"></span></div>
+      <div class="board" id="moBoard" style="margin-top:12px"></div>
+    </div>
+    <div class="card" id="moQ" style="display:none"></div>
+  </section>
+</main>
+
+<div class="scorebar away" id="bar">🏆 累計總分 <span class="pop" id="totalScore" style="color:#DB2777;font-size:17px">0</span>
+  <button class="btn sm" style="padding:2px 8px" onclick="toggleBar()">✕</button></div>
+<button class="scoreDot" id="barDot" onclick="toggleBar()" aria-label="顯示累計總分">🏆</button>
+<div id="toast"></div>
+
+<footer>💌 Goodbye, John — 一次一張卡、一句一句寫，慢慢就寫得出漂亮的英文。<br>© 2026 龍騰 B1 L2 互動自學網頁</footer>
+
+<script>
+/* ============ 資料 ============ */
+const DATA=[
+/* ===== 1. 應用字彙 ===== */
+{id:1,cat:"vocabulary",word:"relationship",pos:"n. [C]",ch:"（人際、戀愛、親屬）關係",target:"have a close relationship with sb.",target_ch:"和某人關係親密",syn:"develop/build/form a relationship 發展／建立／形成關係",ex:"There is a close relationship between Simon and his grandmother."},
+{id:2,cat:"vocabulary",word:"relation",pos:"n. [U, C]",ch:"關係（多用於工作或國與國的邦交）",target:"in relation to N",target_ch:"有關……",syn:"bear little relation to 與……關係不大；diplomatic relations 外交關係",ex:"Whether one succeeds or not bears little relation to their talent; it has more to do with their effort."},
+{id:3,cat:"vocabulary",word:"relate",pos:"vt.",ch:"使兩者有聯繫",target:"relate A to B",target_ch:"認為A和B相關",syn:"be closely related to 與……密切相關",ex:"Smoking has been proved to be closely related to lung cancer."},
+{id:4,cat:"vocabulary",word:"satisfying",pos:"adj.",ch:"令人滿意的",target:"a satisfying experience",target_ch:"令人滿意的經驗",syn:"satisfied adj. 感到滿意的（人）／satisfying 令人滿意的（事物）",ex:"Working as a volunteer is a deeply satisfying and rewarding experience."},
+{id:5,cat:"vocabulary",word:"satisfy",pos:"vt.",ch:"使……滿意",target:"satisfy one's needs",target_ch:"滿足某人的需求",syn:"satisfy one's hunger/appetite 填飽肚子；satisfy one's curiosity 滿足好奇心；satisfy/meet a requirement 達到要求",ex:"Textbooks alone are not enough to satisfy my students' desire for knowledge."},
+{id:6,cat:"vocabulary",word:"satisfaction",pos:"n. [U]",ch:"滿意",target:"with satisfaction",target_ch:"滿足地",syn:"(much) to one's satisfaction 令某人相當滿意地；get/gain satisfaction from 從……獲取滿足感；customer satisfaction 顧客滿意度",ex:"Much to my satisfaction, I've successfully lost 20 pounds in the past two weeks."},
+{id:7,cat:"vocabulary",word:"satisfied",pos:"adj.",ch:"感到滿意的",target:"be satisfied with",target_ch:"對……感到滿意",syn:"satisfied customers 滿意的顧客",ex:"Satisfied with the waiter's service, the customer gave him a generous tip."},
+{id:8,cat:"vocabulary",word:"inspire",pos:"vt.",ch:"激勵；激發靈感",target:"inspire sb. to VR",target_ch:"激勵某人做某事",syn:"be inspired by a true story 取材自真實故事",ex:"J.K. Rowling's success story has inspired many women to become writers."},
+{id:9,cat:"vocabulary",word:"inspiration",pos:"n. [U, C]",ch:"靈感；激勵人心的人或事物",target:"draw inspiration from N",target_ch:"從N獲取靈感",syn:"a source of inspiration for sb. 某人的靈感來源；a sudden flash of inspiration 靈光一閃",ex:"Chinese poets such as Wang Wei and Meng Haoran often sought inspiration in nature."},
+{id:10,cat:"vocabulary",word:"connect",pos:"vi.",ch:"與他人建立良好關係",target:"connect with sb.",target_ch:"與某人建立良好關係",syn:"open up and connect with others 敞開心胸與人往來",ex:"Don't shut yourself away; open up and connect with others more."},
+{id:11,cat:"vocabulary",word:"connect",pos:"vt.",ch:"連接",target:"connect A with B",target_ch:"把A連接到B",syn:"connect an appliance to a power supply 把電器接上電源",ex:"The bridge connects this remote town with the outside world."},
+{id:12,cat:"vocabulary",word:"connection",pos:"n. [C]",ch:"關聯；關係",target:"a close connection between A and B",target_ch:"A與B密切的關聯",syn:"make a/the connection 形成關聯",ex:"There is a connection between air pollution and lung disease."},
+{id:13,cat:"vocabulary",word:"communicate",pos:"vi.",ch:"溝通",target:"communicate with sb.",target_ch:"和某人溝通",syn:"communicate sth. to sb. 把某事傳達給某人",ex:"If two people do not speak a common language, it is difficult for them to communicate with each other."},
+{id:14,cat:"vocabulary",word:"communication",pos:"n. [U]",ch:"溝通；通訊",target:"a means of communication",target_ch:"一種通訊方式",syn:"communication skills 溝通技巧；be in communication with 與……聯繫；(non-)verbal communication （非）口語溝通",ex:"Due to the massive earthquake, the remote town was cut off without any means of communication."},
+{id:15,cat:"vocabulary",word:"introduce",pos:"vt.",ch:"使某人初次體驗；介紹；引進",target:"introduce sb. to sth.",target_ch:"讓某人初次體驗某事物",syn:"introduce sth. to sb. 亦可；the introduction of sth. to 引進至……",ex:"Wayne introduced me to the joys of birdwatching."},
+{id:16,cat:"vocabulary",word:"introduction",pos:"n. [C]",ch:"介紹；引言",target:"need no introduction",target_ch:"無須介紹",syn:"make the introductions 介紹每個人；give a brief introduction to 簡短介紹",ex:"I believe you need no introduction since you all know each other."},
+{id:17,cat:"vocabulary",word:"throughout",pos:"prep.",ch:"自始自終；遍及",target:"throughout the year",target_ch:"終年",syn:"throughout the day 一整天",ex:"The museum is open every day throughout the year except during the Chinese New Year."},
+{id:18,cat:"vocabulary",word:"message",pos:"n. [C]",ch:"（電郵或手機等的）訊息",target:"text message",target_ch:"簡訊",syn:"leave a message for sb. 留言給某人；take a message 替某人留言；a voice message 語音訊息",ex:"Damien said he had sent you a message through e-mail."},
+{id:19,cat:"vocabulary",word:"refresh",pos:"vt. vi.",ch:"刷新；使某人恢復精神",target:"refresh oneself with N",target_ch:"用N讓自己恢復精神",syn:"refresh one's Facebook feed 更新臉書即時動態；refresh one's memories 喚起記憶",ex:"After a hard day's work, I always refresh myself with a hot bath."},
+{id:20,cat:"vocabulary",word:"romantic",pos:"adj.",ch:"浪漫的；愛情的",target:"a romantic relationship",target_ch:"戀愛關係",syn:"a romantic view 不切實際的想法；a romantic comedy 愛情喜劇",ex:"After dinner, William and Anna took a romantic stroll in the park."},
+{id:21,cat:"vocabulary",word:"romance",pos:"n. [C]",ch:"浪漫愛情故事；浪漫戀情",target:"a romance novel",target_ch:"愛情小說",syn:"a summer/holiday romance 一段夏日戀情",ex:"We find one of the greatest film romances in Gone with the Wind."},
+{id:22,cat:"vocabulary",word:"focus",pos:"vi. vt.",ch:"專注；專心",target:"focus one's mind on N",target_ch:"專注於N",syn:"focus one's attention on 將注意力集中於；focus the camera on 對焦於",ex:"I can't focus on my studies with so much noise around."},
+{id:23,cat:"vocabulary",word:"focus",pos:"n. [C, U]",ch:"焦點；重心",target:"main focus",target_ch:"重點",syn:"bring sth. into focus 使成為焦點；the focus shifts from...to... 焦點轉移",ex:"Cultivating students' literacy is the focus of attention in the current educational reform."},
+{id:24,cat:"vocabulary",word:"ignore",pos:"vt.",ch:"忽略",target:"totally ignore",target_ch:"完全忽略",syn:"ignore sb. as if he didn't exist 當某人不存在",ex:"The wife totally ignored her husband as if he didn't exist."},
+{id:25,cat:"vocabulary",word:"ignorance",pos:"n. [U]",ch:"無知",target:"out of ignorance",target_ch:"出於無知",syn:"be in ignorance (of sth.) 不知道某事；Ignorance is bliss. 無知是福",ex:"Jane's parents remained in ignorance of her divorce; she didn't mention a word about it to them."},
+{id:26,cat:"vocabulary",word:"ignorant",pos:"adj.",ch:"無知的",target:"be ignorant of sth.",target_ch:"對……一無所知",syn:"utterly ignorant of 完全一無所知",ex:"I'm surprised that many people are still utterly ignorant of the effects of global warming."},
+{id:27,cat:"vocabulary",word:"attention",pos:"n. [U]",ch:"注意力；特別護理",target:"draw one's attention to N",target_ch:"讓某人注意到N",syn:"catch sb.'s attention 引起注意；special medical attention 特別醫療照護；stand at attention 立正",ex:"The teacher snapped his fingers to catch his students' attention."},
+{id:28,cat:"vocabulary",word:"deny",pos:"vt.",ch:"否認",target:"deny + N/V-ing",target_ch:"否認N/V-ing",syn:"There's no denying that... 不可否認……",ex:"There's no denying that Korean culture has had a huge influence on Taiwan's teenagers."},
+{id:29,cat:"vocabulary",word:"denial",pos:"n. [C]",ch:"否認",target:"issue an official denial of",target_ch:"正式否認……",syn:"repeated denials that... 一再否認……",ex:"The president has issued an official denial of any involvement in the bribery scandal."},
+{id:30,cat:"vocabulary",word:"respond",pos:"vi. vt.",ch:"回應；有效果",target:"respond to N with...",target_ch:"以……回應N",syn:"simply respond that S+V 僅僅回應說……；respond well to medicine 對藥物有反應",ex:"Fanny responded to my greeting with a nod."},
+{id:31,cat:"vocabulary",word:"response",pos:"n. [C, U]",ch:"回應",target:"in response to N",target_ch:"回應N",syn:"make no response to N 對N沒有回應；receive a positive response from 獲得正面回應",ex:"The suspect remained silent in response to all the questions he was asked."},
+{id:32,cat:"vocabulary",word:"disappointed",pos:"adj.",ch:"感到失望的",target:"be disappointed to VR",target_ch:"很失望地做某事",syn:"be bitterly disappointed by 對……大失所望",ex:"Ross was disappointed to see Rachael wasn't at his birthday party tonight."},
+{id:33,cat:"vocabulary",word:"disappoint",pos:"vt.",ch:"使……失望",target:"It disappoints sb. that...",target_ch:"某事讓某人失望",syn:"disappoint one's parents 讓父母失望",ex:"It really disappointed me that my boss didn't give me a raise."},
+{id:34,cat:"vocabulary",word:"disappointment",pos:"n. [U, C]",ch:"失望；令人失望的人或事物",target:"to one's great disappointment",target_ch:"讓某人大大失望",syn:"hide one's disappointment 掩飾失望；a major disappointment 令人非常失望的事",ex:"Much to my disappointment, I wasn't admitted to my dream college."},
+{id:35,cat:"vocabulary",word:"personally",pos:"adv.",ch:"針對某人地",target:"take sth. personally",target_ch:"認為某事是針對個人",syn:"I didn't mean it personally. 我不是針對你。",ex:"Robert took it personally when the boss said some people needed to work harder."},
+{id:36,cat:"vocabulary",word:"personal",pos:"adj.",ch:"個人的",target:"personal experience",target_ch:"個人經驗",syn:"personal belongings 個人財物；for personal use only 僅供個人使用；personal qualities 個人特質",ex:"Please remember to take all your personal belongings with you when you leave."},
+/* ===== 2. 慣用語與片語 ===== */
+{id:37,cat:"idiom",word:"in fact",pos:"phr.",ch:"事實上",target:"in fact",target_ch:"事實上",syn:"同 as a matter of fact, actually；可加強或修正前面說過的話",ex:"December is not cold in Australia. In fact, it's the middle of summer."},
+{id:38,cat:"idiom",word:"go through",pos:"phr. v.",ch:"徹底讀過；經歷",target:"go through",target_ch:"徹底讀過",syn:"to search through or look at several things one by one",ex:"Bill is going through the list of winners to see if he is one of them."},
+{id:39,cat:"idiom",word:"in case",pos:"phr.",ch:"以防萬一",target:"in case",target_ch:"以防萬一",syn:"in case + S + V；Take notes in case you forget.",ex:"Each of the hikers brought an umbrella and a raincoat in case it rained."},
+{id:40,cat:"idiom",word:"in addition",pos:"phr.",ch:"除此之外",target:"in addition",target_ch:"除此之外",syn:"同 besides, furthermore, moreover, additionally；in addition to + N/V-ing",ex:"Please remember to bring a snack to the party. In addition, you should bring a gift for the birthday boy."},
+{id:41,cat:"idiom",word:"hang out",pos:"phr. v.",ch:"（與某人）一起出去、廝混",target:"hang out with sb.",target_ch:"與某人一起出去",syn:"⚡ 動詞三態：hang - hung - hung（現在分詞 hanging）。to spend time together in a fun or casual way。注意：hang 作「吊死、絞刑」解時三態為 hang - hanged - hanged",ex:"Alice and her friends always hang out in a cafe after school on Fridays."},
+{id:42,cat:"idiom",word:"turn to",pos:"phr. v.",ch:"轉向（某人）；求助於（某人）",target:"turn to sb. for help",target_ch:"向某人求助",syn:"cf. turn into 變成",ex:"Tracy always turns to her older sister Ivy when she has a problem with one of her friends."},
+{id:43,cat:"idiom",word:"take...personally",pos:"phr.",ch:"認為……是針對個人；對……感到不悅",target:"take sth. personally",target_ch:"認為某事是針對個人",syn:"to be offended by something",ex:"Please don't take this personally, but I don't like your shirt. You look better in darker colors."},
+/* ===== 3. 認識字彙 ===== */
+{id:44,cat:"recognize",word:"update",pos:"n. [C] / vt.",ch:"最新動態／更新；告知最新進度",target:"a weather update",target_ch:"最新天氣動態",syn:"update sb. on sth. 向某人告知某事的最新進度",ex:"Albert checked his cell phone to get a weather update."},
+{id:45,cat:"recognize",word:"Facebook",pos:"n.",ch:"臉書",target:"refresh one's Facebook feed",target_ch:"更新臉書的即時動態",syn:"Facebook news feed 臉書即時動態",ex:"She was refreshing her Facebook news feed at the time."},
+{id:46,cat:"recognize",word:"Instagram",pos:"n.",ch:"Instagram（提供圖片及視訊分享的社交應用軟體）",target:"draw attention on Instagram",target_ch:"在Instagram上引人注意",syn:"社群媒體 social media 之一",ex:"I draw attention on Instagram with photos from my family holidays."},
+{id:47,cat:"recognize",word:"LINE",pos:"n.",ch:"LINE（即時通訊軟體與行動應用程式）",target:"a LINE message",target_ch:"一則LINE訊息",syn:"chat with friends on LINE 用LINE聊天",ex:"Her best friend sent her a LINE message with a pig sticker."},
+{id:48,cat:"recognize",word:"app",pos:"n. [C]",ch:"應用程式（application 的縮寫）",target:"a mobile app",target_ch:"一個手機應用程式",syn:"download an app 下載應用程式",ex:"LINE is an app that many people in Taiwan use every day."},
+{id:49,cat:"recognize",word:"terribly",pos:"adv.",ch:"非常地",target:"terribly sorry",target_ch:"非常抱歉",syn:"同 extremely, very",ex:"I'm terribly sorry that I forgot to reply to your message."},
+/* ===== 4. 當課句型 ===== */
+{id:50,cat:"grammar",word:"虛主詞 it（不定詞）",pos:"pattern",ch:"以 it 代替過長的不定詞主詞，放句尾避免頭重腳輕",target:"It is + adj. + to VR",target_ch:"做某事是……的",syn:"To put personal information online is dangerous. = It is dangerous to put personal information online.",ex:"It is not easy to tell you this, but I still need to say it."},
+{id:51,cat:"grammar",word:"虛主詞 it ＋ for sb.",pos:"pattern",ch:"補充「進行此動作的人」時，在形容詞後加 for + sb.",target:"It is + adj. + for sb. + to VR",target_ch:"對某人而言做某事是……的",syn:"否定時 not 放在 to VR 前；若有 for sb.，not 放在 for sb. 與 to VR 之間",ex:"All this might sound romantic, but it is difficult for me to focus on school, and my grades are getting worse!"},
+{id:52,cat:"grammar",word:"虛主詞 it ＋ that 子句",pos:"pattern",ch:"it 也可當 that 子句的虛主詞",target:"It is + adj. + that + S + V",target_ch:"……是……的",syn:"That Kevin won the lottery is true. = It is true that Kevin won the lottery.",ex:"It is unbelievable that the 4-year-old child could perform magic tricks."},
+{id:53,cat:"grammar",word:"現在完成式（持續）",pos:"pattern",ch:"描述從過去持續到現在的動作、事件或狀態",target:"S + have/has + p.p. + since/for...",target_ch:"自從……以來一直……",syn:"since + 過去時間點或過去式子句；for + 一段時間",ex:"In fact, things have been totally different since you came into my life."},
+{id:54,cat:"grammar",word:"現在完成式（經驗／完成）",pos:"pattern",ch:"描述到目前為止有過的經驗，或過去發生而現在已完成的事",target:"S + have/has (never) + p.p.",target_ch:"曾經／從未……",syn:"Our school basketball team has won the championship six times.",ex:"You've introduced me to so much - new music, new games, new knowledge, new friends, and more."}
+];
+const COLLO=DATA.filter(d=>d.cat!=="grammar");
+const PATT=DATA.filter(d=>d.cat==="grammar");
+
+/* ============ 通用工具 ============ */
+function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.style.display='block';clearTimeout(t._t);t._t=setTimeout(()=>t.style.display='none',3500);}
+let TOTAL=0;
+function addScore(n){
+  TOTAL=Math.max(0,TOTAL+n);
+  const e=document.getElementById('totalScore');e.textContent=TOTAL;
+  e.classList.remove('go');void e.offsetWidth;e.classList.add('go');
+  const act=document.activeElement;
+  if(!(act&&act.matches&&act.matches('input,textarea'))){
+    const b=document.getElementById('bar'),dot=document.getElementById('barDot');
+    if(b&&b.classList.contains('away')){b.classList.remove('away');dot.classList.add('away');
+      clearTimeout(toggleBar._t);toggleBar._t=setTimeout(hideBar,2000);}
+  }
+}
+function toggleBar(){
+  const b=document.getElementById('bar');
+  const open=b.classList.toggle('away')===false;
+  document.getElementById('barDot').classList.toggle('away',open);
+  clearTimeout(toggleBar._t);
+  if(open)toggleBar._t=setTimeout(hideBar,6000);
+}
+function hideBar(){document.getElementById('bar').classList.add('away');document.getElementById('barDot').classList.remove('away');}
+document.addEventListener('focusin',e=>{if(e.target.matches('input,textarea')){hideBar();document.getElementById('barDot').classList.add('away');}});
+document.addEventListener('focusout',()=>setTimeout(()=>document.getElementById('barDot').classList.remove('away'),250));
+
+/* ---- 朗讀引擎（三層備援） ---- */
+let ttsUnlocked=false, ttsMode=null;
+function getSynth(){
+  try{const sy=window.speechSynthesis||window.webkitSpeechSynthesis;
+    const Ut=window.SpeechSynthesisUtterance||window.webkitSpeechSynthesisUtterance;
+    if(sy&&typeof sy.speak==='function'&&typeof Ut==='function')return{sy:sy,Ut:Ut};}catch(e){}
+  return null;
+}
+function warmVoices(){const t=getSynth();if(!t)return;try{t.sy.getVoices();
+  if('onvoiceschanged' in t.sy)t.sy.onvoiceschanged=function(){try{t.sy.getVoices();}catch(e){}};}catch(e){}}
+window.addEventListener('load',warmVoices);
+function unlockTTS(){if(ttsUnlocked)return;const t=getSynth();if(!t)return;
+  try{const u=new t.Ut(' ');u.volume=0;u.rate=1;t.sy.speak(u);ttsUnlocked=true;}catch(e){}}
+document.addEventListener('touchstart',unlockTTS,{once:true,passive:true});
+document.addEventListener('mousedown',unlockTTS,{once:true});
+let ttsAudio=null;
+const AUDIO_SRC=[
+  function(x){return 'https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&ttsspeed=1&q='+encodeURIComponent(x);},
+  function(x){return 'https://api.streamelements.com/kappa/v2/speech?voice=Joanna&text='+encodeURIComponent(x);}
+];
+function sayByAudio(str,i){
+  i=i||0;if(i>=AUDIO_SRC.length){sayFailed();return false;}
+  try{
+    if(!ttsAudio){ttsAudio=new Audio();ttsAudio.preload='auto';}
+    ttsAudio.onerror=function(){sayByAudio(str,i+1);};
+    ttsAudio.onplaying=function(){ttsMode='audio';};
+    ttsAudio.pause();ttsAudio.src=AUDIO_SRC[i](str.slice(0,190));ttsAudio.load();
+    const pr=ttsAudio.play();if(pr&&pr.catch)pr.catch(function(){sayByAudio(str,i+1);});
+    return true;
+  }catch(e){return sayByAudio(str,i+1);}
+}
+let failedShown=false,lastSpoken='';
+function sayFailed(){if(ttsMode)return;showSayHelper(lastSpoken);
+  if(failedShown)return;failedShown=true;toast('這個視窗的瀏覽器關閉了朗讀權限，下方已附上備用發音連結 👇');}
+function showSayHelper(str){
+  let box=document.getElementById('sayHelper');
+  if(!box){box=document.createElement('div');box.id='sayHelper';
+    box.style.cssText='position:fixed;left:8px;right:8px;bottom:70px;z-index:96;background:#fff;border:2px solid #F9A8D4;border-radius:16px;padding:12px;box-shadow:0 10px 26px rgba(200,120,180,.3);font-size:13px;font-weight:800';
+    document.body.appendChild(box);}
+  const q=encodeURIComponent(String(str||'').slice(0,190));
+  box.innerHTML='<div style="margin-bottom:6px">🔊 這個視窗無法直接發音。兩個做法：</div>'
+   +'<div class="mini" style="font-weight:700;line-height:1.8">① 把本檔案<b>下載</b>後，用 <b>Chrome</b> 或 <b>Safari</b> 開啟，並關掉手機側邊靜音開關。<br>② 現在就聽：點下面的連結，在 Google 翻譯按喇叭。</div>'
+   +'<div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap">'
+   +'<a class="btn sm" style="text-decoration:none" target="_blank" rel="noopener" href="https://translate.google.com/?sl=en&tl=zh-TW&op=translate&text='+q+'">🔗 用 Google 翻譯發音</a>'
+   +'<button class="btn sm pink" onclick="document.getElementById(\'sayHelper\').remove()">✕ 關閉</button></div>';
+}
+function pickVoice(sy){try{const vs=sy.getVoices()||[];if(!vs.length)return null;
+  return vs.find(v=>/^en[-_]US/i.test(v.lang))||vs.find(v=>/^en/i.test(v.lang))||null;}catch(e){return null;}}
+function speakOnce(t,str,onStarted){
+  try{t.sy.cancel();}catch(e){}
+  try{if(t.sy.paused)t.sy.resume();}catch(e){}
+  try{const w=new t.Ut(' ');w.volume=0;w.rate=1;t.sy.speak(w);}catch(e){}
+  const v=pickVoice(t.sy);
+  const parts=str.length>140?(str.match(/[^.!?;]+[.!?;]?/g)||[str]):[str];
+  parts.forEach(function(p){p=p.trim();if(!p)return;
+    const u=new t.Ut(p);u.lang='en-US';u.rate=1.0;u.pitch=1;u.volume=1;
+    if(v)u.voice=v;u.onstart=function(){onStarted();};u.onend=function(){onStarted();};t.sy.speak(u);});
+  try{if(t.sy.paused)t.sy.resume();}catch(e){}
+  clearInterval(speakOnce._k);
+  speakOnce._k=setInterval(function(){try{const x=getSynth();
+    if(!x||(!x.sy.speaking&&!x.sy.pending)){clearInterval(speakOnce._k);return;}
+    if(x.sy.paused)x.sy.resume();}catch(e){clearInterval(speakOnce._k);}},3000);
+}
+function say(text){
+  const str=String(text||'').replace(/\s+/g,' ').trim();if(!str)return;lastSpoken=str;
+  const t=getSynth();
+  if(t){try{unlockTTS();let ok=false;const mark=function(){ok=true;ttsMode='web';};
+    speakOnce(t,str,mark);
+    setTimeout(function(){if(ok||ttsMode==='web')return;try{const x=getSynth();if(x)speakOnce(x,str,mark);}catch(e){}},700);
+    setTimeout(function(){if(ok||ttsMode)return;sayByAudio(str,0);},2200);
+    return;}catch(e){}}
+  sayByAudio(str,0);
+}
+function ttsTest(){
+  const t=getSynth();
+  if(!t){toast('這個視窗沒有語音功能，請下載檔案後用 Chrome 或 Safari 開啟 🙏');showSayHelper('Goodbye, John');return;}
+  let n=0;try{n=(t.sy.getVoices()||[]).length;}catch(e){}
+  toast('偵測到語音功能，可用語音 '+n+' 個，正在播放測試音…');
+  say('Goodbye, John. It is not easy to tell you this.');
+}
+function resolveSay(v){
+  if(v==='__fcWord')return FC[fcI].word;
+  if(v==='__fcEx')return FC[fcI].ex||FC[fcI].word;
+  if(v==='__wqEx')return WQ[wqi].ex;
+  return v;
+}
+function bindSpeak(ev){
+  const btn=ev.target.closest?ev.target.closest('[data-say]'):null;
+  if(!btn)return;ev.stopPropagation();
+  if(ev.type==='touchend'){ev.preventDefault();btn.dataset.touched='1';setTimeout(()=>{delete btn.dataset.touched;},600);}
+  else if(btn.dataset.touched){return;}
+  say(resolveSay(btn.dataset.say));
+}
+document.addEventListener('touchend',bindSpeak,{passive:false});
+document.addEventListener('click',bindSpeak);
+
+/* ---- 煙火 ---- */
+const cvs=document.getElementById('fw');let ctx=null;
+try{ctx=cvs.getContext('2d');}catch(e){}
+function fitCanvas(){cvs.width=window.innerWidth;cvs.height=window.innerHeight;}
+fitCanvas();window.addEventListener('resize',fitCanvas);
+let parts=[];
+function boom(){
+  if(!ctx)return;
+  const cols=['#F9A8D4','#A5B4FC','#6EE7B7','#FDE68A','#FCA5A5','#C4B5FD'];
+  const x=Math.random()*cvs.width,y=Math.random()*cvs.height*0.5+cvs.height*0.2;
+  for(let i=0;i<60;i++)parts.push({x,y,c:cols[i%cols.length],s:Math.random()*4+3,vx:Math.random()*6-3,vy:Math.random()*6-3,a:1,d:Math.random()*.015+.01});
+  if(!boom._on){boom._on=true;requestAnimationFrame(loop);}
+}
+function loop(){
+  ctx.clearRect(0,0,cvs.width,cvs.height);
+  for(let i=parts.length-1;i>=0;i--){const p=parts[i];p.vy+=0.08;p.x+=p.vx;p.y+=p.vy;p.a-=p.d;
+    ctx.save();ctx.globalAlpha=Math.max(0,p.a);ctx.fillStyle=p.c;ctx.beginPath();ctx.arc(p.x,p.y,p.s,0,7);ctx.fill();ctx.restore();
+    if(p.a<=0)parts.splice(i,1);}
+  if(parts.length)requestAnimationFrame(loop);else{ctx.clearRect(0,0,cvs.width,cvs.height);boom._on=false;}
+}
+
+/* ============ 頁籤 ============ */
+const TABS=[["p-fc","🃏 閃卡自學"],["p-wr","✍️ 搭配詞造句"],["p-mt","💡 字彙對對碰"],["p-sp","✍️ Sentence Pattern"],["p-cz","🧩 例句填空"],["p-wm","🔤 文意字彙"],["p-gr","📐 文法選擇"],["p-mo","🎲 摘要大富翁"]];
+document.getElementById('tabs').innerHTML=TABS.map(([id,l],i)=>`<button class="tab${i===0?' on':''}" data-t="${id}" onclick="go('${id}')">${l}</button>`).join('')
+ +`<button class="tab" style="grid-column:1 / -1" onclick="toggleBar();closeMenu()">🏆 查看累計總分</button>`
+ +`<button class="tab" style="grid-column:1 / -1" onclick="ttsTest()">🔊 發音檢測（聽不到聲音時按這裡）</button>`;
+function closeMenu(){
+  const t=document.getElementById('tabs');
+  if(!t.classList.contains('hidden')){t.classList.add('hidden');
+    document.getElementById('menuBtn').setAttribute('aria-expanded','false');
+    document.getElementById('menuBtn').innerHTML='☰ 選單';}
+  measure();
+}
+function go(id){
+  document.querySelectorAll('section.page').forEach(s=>s.classList.toggle('on',s.id===id));
+  document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('on',b.dataset.t===id));
+  closeMenu();window.scrollTo({top:0,behavior:'smooth'});
+}
+function toggleTabs(){
+  const t=document.getElementById('tabs'),b=document.getElementById('menuBtn');
+  const open=t.classList.toggle('hidden')===false;
+  b.setAttribute('aria-expanded',open?'true':'false');
+  b.innerHTML=open?'✕ 關閉':'☰ 選單';measure();
+}
+document.addEventListener('click',e=>{if(!e.target.closest('header'))closeMenu();});
+function measure(){const h=document.querySelector('header').offsetHeight;
+  document.documentElement.style.setProperty('--stickyOffset',(h+6)+'px');}
+window.addEventListener('load',measure);window.addEventListener('resize',measure);
+/* 往下捲動超過 150px 自動收起標題列與選單 */
+let lastY=0;
+window.addEventListener('scroll',function(){
+  const y=window.scrollY||0,hd=document.getElementById('hd');
+  if(y>150&&y>lastY){hd.classList.add('up');closeMenu();}else{hd.classList.remove('up');}
+  lastY=y;
+},{passive:true});
+
+/* ============ 1. 閃卡 ============ */
+let FC=[...DATA],fcI=0;
+function fcFilter(){
+  const v=document.getElementById('fcFilter').value;
+  FC=v==='all'?[...DATA]:DATA.filter(d=>d.cat===v);
+  fcI=0;document.getElementById('fcCard').classList.remove('flip');fcRender();
+}
+function fcRender(){
+  const c=FC[fcI];if(!c)return;
+  document.getElementById('fcPos').textContent=c.pos;
+  document.getElementById('fcIdx').textContent=(fcI+1)+' / '+FC.length;
+  document.getElementById('fcWord').textContent=c.word;
+  document.getElementById('fcCh').textContent=c.ch;
+  document.getElementById('fcTar').textContent=c.target;
+  document.getElementById('fcTarCh').textContent='（'+c.target_ch+'）';
+  document.getElementById('fcEx').textContent=c.ex;
+  document.getElementById('fcSyn').textContent=c.syn||'本項無同義／反義補充';
+}
+function fcFlipCard(){document.getElementById('fcCard').classList.toggle('flip');}
+function fcMove(d){const el=document.getElementById('fcCard');el.classList.remove('flip');
+  setTimeout(()=>{fcI=(fcI+d+FC.length)%FC.length;fcRender();},150);}
+fcRender();
+
+/* ============ 2. 造句遊戲 ============ */
+const IRR={have:["has","had","having"],get:["gets","got","gotten","getting"],make:["makes","made","making"],take:["takes","took","taken","taking"],go:["goes","went","gone","going"],turn:["turns","turned","turning"],hang:["hangs","hung","hanging"],draw:["draws","drew","drawn","drawing"],be:["is","am","are","was","were","been","being"],deny:["denies","denied","denying"],satisfy:["satisfies","satisfied","satisfying"],inspire:["inspires","inspired","inspiring"],connect:["connects","connected","connecting"],communicate:["communicates","communicated","communicating"],introduce:["introduces","introduced","introducing"],refresh:["refreshes","refreshed","refreshing"],focus:["focuses","focused","focusing"],ignore:["ignores","ignored","ignoring"],respond:["responds","responded","responding"],disappoint:["disappoints","disappointed","disappointing"],relate:["relates","related","relating"],send:["sends","sent","sending"],come:["comes","came","coming"],leave:["leaves","left","leaving"]};
+function forms(w){
+  w=w.toLowerCase();const out=new Set([w]);
+  (IRR[w]||[]).forEach(f=>out.add(f));
+  if(w.length>2){
+    out.add(w+'s');out.add(w+'ing');out.add(w+'ed');
+    if(w.endsWith('e')){out.add(w.slice(0,-1)+'ing');out.add(w+'d');}
+    if(w.endsWith('y')){out.add(w.slice(0,-1)+'ies');out.add(w.slice(0,-1)+'ied');}
+    out.add(w+w.slice(-1)+'ed');out.add(w+w.slice(-1)+'ing');
+  }
+  return out;
+}
+function lev(a,b){const m=[];for(let i=0;i<=b.length;i++)m[i]=[i];for(let j=0;j<=a.length;j++)m[0][j]=j;
+for(let i=1;i<=b.length;i++)for(let j=1;j<=a.length;j++)m[i][j]=b[i-1]===a[j-1]?m[i-1][j-1]:Math.min(m[i-1][j-1]+1,m[i][j-1]+1,m[i-1][j]+1);
+return m[b.length][a.length];}
+let round=1,wqi=0,roundScore=0,WQ=[],usedC=[],usedP=[],report=[];
+function newRound(){
+  let pool=COLLO.filter(x=>!usedC.includes(x.id));
+  if(pool.length<9){usedC=[];pool=[...COLLO];}
+  const pick=shuffle(pool).slice(0,9);pick.forEach(x=>usedC.push(x.id));
+  let pp=PATT.filter(x=>!usedP.includes(x.id));
+  if(!pp.length){usedP=[];pp=[...PATT];}
+  const one=shuffle(pp)[0];usedP.push(one.id);
+  WQ=[...pick,one];
+}
+function wrRender(){
+  const q=WQ[wqi];
+  document.getElementById('wrRound').textContent=round;
+  document.getElementById('wrIdx').textContent=wqi+1;
+  document.getElementById('wrRS').textContent=roundScore;
+  document.getElementById('wrPos').textContent=q.pos;
+  document.getElementById('wrWord').textContent=q.word;
+  document.getElementById('wrCh').textContent='中文翻譯：'+q.ch;
+  document.getElementById('wrTar').textContent=q.target;
+  document.getElementById('wrTarCh').textContent='（'+q.target_ch+'）';
+  document.getElementById('wrIn').value='';document.getElementById('wrIn').disabled=false;
+  document.getElementById('wrBtn').disabled=false;
+  document.getElementById('wrFb').innerHTML='';
+  document.getElementById('wrReview').style.display='none';
+}
+function hl(s,t){if(!s)return'';const e=t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');return esc(s).replace(new RegExp('('+e+')','gi'),'<mark style="background:#FEF08A;border-radius:5px">$1</mark>');}
+function localFix(s,t){
+  let x=s.trim();if(!x)return{c:t,e:"請試著多寫一些單字，讓句子更完整喔！"};
+  x=x.charAt(0).toUpperCase()+x.slice(1);x=x.replace(/\bi\b/g,'I');
+  if(!/[.!?]$/.test(x))x+='.';
+  let e="這是系統提供的基礎修正建議，讓句子更符合文法常規喔！";
+  const low=x.toLowerCase();
+  if(/\bit is\b/.test(low)&&/\bfor\b/.test(low)&&!/\bto\s+[a-z]+/.test(low)){
+    e="使用 It is + adj. + for sb. + to VR 時，for sb. 後面一定要接『to + 原形動詞』，別忘了 to 喔！";
+  }else if(/\b(have|has)\b/.test(low)&&/\bsince\b/.test(low)&&!/\b(ed|been|gone|done|written|seen|made|taken)\b/.test(low)){
+    e="現在完成式的公式是 have/has + 過去分詞(p.p.)，請檢查動詞是否已改成過去分詞形式。";
+  }
+  return{c:x,e};
+}
+function wrSubmit(){
+  const raw=document.getElementById('wrIn').value.trim();
+  if(!raw){toast("⚠️ 請先寫個句子再送出批改喔！");return;}
+  const q=WQ[wqi];
+  const low=raw.toLowerCase().replace(/[.,!?;:"]/g,' ').replace(/\s+/g,' ').trim();
+  const sw=low.split(' ');
+  let spell=false,gram=false,short=false,missing=[];
+  const tw=q.target.toLowerCase().replace(/[^a-z\s\/]/g,' ').split(/[\s\/]+/).filter(w=>w.length>3&&!['sth','sb','vr'].includes(w));
+  tw.forEach(t=>{
+    const fs=forms(t);const hit=sw.some(w=>fs.has(w));
+    if(!hit){missing.push(t);if(sw.some(w=>w.length>3&&lev(t,w)>0&&lev(t,w)<=2))spell=true;}
+  });
+  if(sw.length<5)short=true;
+  if(q.cat==="grammar"){
+    if(q.id===50||q.id===51){if(!/\bit\s+(is|was)\b/.test(low)||!/\bto\s+[a-z]+/.test(low))gram=true;}
+    if(q.id===51&&!/\bfor\b/.test(low))gram=true;
+    if(q.id===52){if(!/\bit\s+(is|was)\b/.test(low)||!/\bthat\b/.test(low))gram=true;}
+    if(q.id===53||q.id===54){if(!/\b(have|has|haven't|hasn't|have not|has not)\b/.test(low))gram=true;}
+    if(q.id===53&&!/\b(since|for)\b/.test(low))gram=true;
+  }
+  /* 🌟 彈性句型認可：目標為形容詞時，下列三種寫法皆算正確
+     (1) It is + adj. + to VR...  (2) It is + adj. + that + S + V...  (3) V-ing ... is + adj. */
+  let flex=false,flexNote='';
+  if(q.cat!=="grammar"&&/^adj/i.test(q.pos)){
+    const core=q.word.toLowerCase().replace(/[^a-z]/g,'');
+    const cf=forms(core);
+    const coreHit=sw.some(w=>cf.has(w));
+    if(coreHit){
+      const A=new RegExp("\\bit\\s+(is|was|s)\\s+(?:[a-z]+\\s+){0,2}"+core+"\\b[\\s\\S]*\\bto\\s+[a-z]+");
+      const B=new RegExp("\\bit\\s+(is|was|s)\\s+(?:[a-z]+\\s+){0,2}"+core+"\\b[\\s\\S]*\\bthat\\b");
+      const C=new RegExp("\\b[a-z]+ing\\b[\\s\\S]*\\b(is|was|are|were)\\s+(?:[a-z]+\\s+){0,2}"+core+"\\b");
+      if(A.test(low)){flex=true;flexNote='It is + adj. + to VR';}
+      else if(B.test(low)){flex=true;flexNote='It is + adj. + that + S + V';}
+      else if(C.test(low)){flex=true;flexNote='V-ing ... is + adj.';}
+    }
+  }
+  if(flex){spell=false;gram=false;missing=[];}
+  const ok=!spell&&!gram&&!short&&!missing.length;
+  const fix=localFix(raw,q.target);
+  let delta;
+  if(ok){delta=200;roundScore+=200;addScore(200);boom();}
+  else{delta=-50;roundScore=Math.max(0,roundScore-50);addScore(-50);}
+  document.getElementById('wrRS').textContent=roundScore;
+  document.getElementById('wrIn').disabled=true;document.getElementById('wrBtn').disabled=true;
+  const d=(msg,bad)=>`<div style="padding:8px 10px;border-radius:12px;font-size:12.5px;font-weight:800;background:${bad?'#FEE2E2':'#DCFCE7'};border:2px solid ${bad?'#FCA5A5':'#86EFAC'};flex:1 1 180px">${msg}</div>`;
+  document.getElementById('wrFb').innerHTML=`
+   <div class="card" style="margin-top:14px;border-color:${ok?'#86EFAC':'#F9A8D4'}">
+    <div class="row" style="justify-content:space-between">
+      <div style="font-size:18px;font-weight:900;color:${ok?'#047857':'#B45309'}">${ok?'🎉 '+shuffle(["Excellent job!","You nailed it!","Beautiful grammar!","Wow! Amazing sentence!"])[0]:'💡 別灰心！我們來做點小修正'}</div>
+      <span class="chip" style="background:${ok?'#DCFCE7':'#FCE7F3'}">${ok?'+200 分 🎯':'−50 分 💧'}</span>
+    </div>
+    <div class="mini" style="margin:8px 0">🔬 智慧型分析診斷明細：</div>
+    <div class="row">
+      ${d(spell?`📌【拼字檢查】請再檢查搭配詞 "${esc(q.target)}" 的拼法。`:'📌【拼字檢查】符合常規 ✨',spell)}
+      ${d(gram?'✍️【文法與結構】句構需要再檢查：虛主詞 it／for sb.／to VR／have + p.p. 是否齊全。':'✍️【文法與結構】結構正確 ✨',gram)}
+      ${d(short||missing.length?(short?'🕒【完整度】句子偏短，試著擴充結構。':'🕒【完整度】似乎缺少關鍵字組：['+missing.join(', ')+']'):'🕒【時態與完整度】完整度良好 ✨',short||missing.length)}
+    </div>
+    ${flex?`<div class="hint" style="margin-top:10px">🌟【句型彈性認可】你把形容詞 <b>${esc(q.word)}</b> 寫成了「${esc(flexNote)}」的句型，語意與文法完全正確，本題照樣得分，不扣分！</div>`:''}
+    <div class="box" style="background:var(--pink)"><div class="lbl">💖 你的回答</div>${esc(raw)}</div>
+    <div class="box" style="background:var(--green)"><div class="lbl" style="color:#047857">✨ 智慧修正</div>${hl(fix.c,q.target)}${ok?'':'<div class="mini" style="margin-top:6px">💡 修改建議：'+esc(fix.e)+'</div>'}</div>
+    <div class="box" style="background:var(--blue)"><div class="lbl" style="color:#2563EB">📘 課文參考範例</div><i>${hl(q.ex,q.target)}</i></div>
+    <div class="row" style="justify-content:flex-end;margin-top:10px"><button class="btn purple" onclick="wrNext()">${wqi<9?'下一題 ➡️':'🏆 查看本輪結算結果'}</button></div>
+   </div>`;
+  report.push({q,raw,fix,ok});
+  document.getElementById('wrFb').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+function wrNext(){
+  if(wqi<9){wqi++;wrRender();window.scrollTo({top:0,behavior:'smooth'});return;}
+  const wrong=report.filter(r=>!r.ok);
+  const grade=roundScore>=1800?'🥇 簡直是英語寫作大師！':roundScore>=1200?'🥈 表現良好，用字精準！':'🌱 繼續加油，錯誤是成功的養分！';
+  const advice=roundScore>=1800?'你的句型結構豐富、虛主詞與現在完成式掌握精準。下次試著在週記或大考作文中大膽寫出這樣的漂亮長句！'
+   :roundScore>=1200?'大部分句子都能融入關鍵搭配詞。再留意動詞時態、主詞單複數，以及 It is...to VR 的結構，下輪就能拿滿分！'
+   :'別氣餒！就像 Sally 花了好久才學會把注意力從手機移回真實生活，多聽幾次範例朗讀、對照【修改建議】，你的語感一定會變敏銳。';
+  document.getElementById('wrReview').style.display='block';
+  document.getElementById('wrReview').innerHTML=`
+   <h3 style="margin:0">🏆 第 ${round} 輪結算</h3>
+   <div style="font-size:34px;font-weight:900;color:#DB2777">${roundScore} / 2000</div>
+   <div class="mini">🏅 累計總分：${TOTAL}</div>
+   <div class="hint" style="margin-top:10px">${grade}<br><span style="font-weight:700">${advice}</span></div>
+   <div class="box" style="background:var(--pink)"><div class="lbl">💡 建議重點加強</div>${wrong.length?wrong.map(r=>`<div>• <b>${esc(r.q.target)}</b>（${esc(r.q.target_ch)}）— ${esc(r.q.word)}</div>`).join(''):'🎉 太強了！本輪沒有需要加強的搭配詞！'}</div>
+   ${report.map((r,i)=>`<div class="box" style="background:${r.ok?'#F0FDF4':'#FFF1F5'}"><b>第 ${i+1} 題：${esc(r.q.word)}</b> <span class="chip">${r.ok?'正確 +200 🥳':'需修正 −50 💡'}</span>
+     <div class="mini">目標：${esc(r.q.target)}（${esc(r.q.target_ch)}）</div>
+     <div>💖 你的回答：${esc(r.raw)}</div>
+     <div>✨ 智慧修正：${hl(r.fix.c,r.q.target)}</div>
+     <div>📘 參考範例：<i>${hl(r.q.ex,r.q.target)}</i></div></div>`).join('')}
+   <div class="box" style="background:var(--yellow)"><div class="lbl">📸 練習作業繳交：截圖上傳到 Google Classroom</div>
+     <div class="mini">Windows：Win + Shift + S ｜ Mac：Cmd + Shift + 4 ｜ Android：電源 + 音量下 ｜ iPhone：電源 + 音量上<br>
+     檔名：班級_座號_姓名_L2_第${round}輪</div>
+     <div class="row" style="margin-top:8px"><button class="btn sm" onclick="copyRound()">📋 複製本輪練習</button><button class="btn sm purple" onclick="window.print()">🖨️ 列印／另存 PDF</button></div></div>
+   <div class="row" style="justify-content:center;margin-top:12px"><button class="btn" onclick="toast('🌸 謝謝你的參與！你的累計總分是 '+TOTAL+' 分，我們下次見！')">🚪 結束本次學習</button><button class="btn pink" onclick="nextRound()">🔄 繼續挑戰下一輪</button></div>`;
+  document.getElementById('wrReview').scrollIntoView({behavior:'smooth'});
+}
+function copyRound(){
+  const txt=report.map((r,i)=>`${i+1}. [${r.q.target}] ${r.raw}\n   修正：${r.fix.c}`).join('\n');
+  const ta=document.createElement('textarea');ta.value=`L2 第${round}輪 本輪得分 ${roundScore}/2000\n`+txt;
+  document.body.appendChild(ta);ta.select();
+  try{document.execCommand('copy');toast('📋 已複製，可直接貼到 Classroom 留言區！');}catch(e){toast('請長按選取文字後手動複製 🙏');}
+  ta.remove();
+}
+function nextRound(){
+  if(round>=5){round=1;usedC=[];usedP=[];toast('🔔 5 輪已完成，題庫重置，再陪你複習一次！');}else round++;
+  wqi=0;roundScore=0;report=[];newRound();wrRender();window.scrollTo({top:0,behavior:'smooth'});
+}
+newRound();wrRender();
+
+/* ============ 3. 字彙對對碰 ============ */
+const MATCH={
+ v:{name:"📚 應用字彙",audio:true,pairs:[["relationship","（人際、戀愛）關係","n. [C]"],["relation","關係（工作／邦交）","n. [U, C]"],["relate","使兩者有聯繫","vt."],["satisfying","令人滿意的","adj."],["satisfy","使……滿意","vt."],["satisfaction","滿意","n. [U]"],["satisfied","感到滿意的","adj."],["inspire","激勵；激發靈感","vt."],["inspiration","靈感","n. [U, C]"],["connect","連接；建立關係","vt. vi."],["connection","關聯；關係","n. [C]"],["communicate","溝通","vi. vt."],["communication","溝通；通訊","n. [U]"],["introduce","使初次體驗；介紹","vt."],["introduction","介紹；引言","n. [C]"],["throughout","自始自終；遍及","prep."],["message","訊息","n. [C]"],["refresh","刷新；使恢復精神","vt. vi."],["romantic","浪漫的","adj."],["romance","浪漫愛情故事","n. [C]"],["focus","專注；焦點","vi. vt. / n."],["ignore","忽略","vt."],["ignorance","無知","n. [U]"],["ignorant","無知的","adj."],["attention","注意力","n. [U]"],["deny","否認","vt."],["denial","否認","n. [C]"],["respond","回應","vi. vt."],["response","回應","n. [C, U]"],["disappointed","感到失望的","adj."],["disappoint","使……失望","vt."],["disappointment","失望","n. [U, C]"],["personally","針對某人地","adv."],["personal","個人的","adj."]]},
+ i:{name:"🔗 慣用語與片語",audio:true,pairs:[["in fact","事實上"],["go through","徹底讀過；經歷"],["in case","以防萬一"],["in addition","除此之外"],["hang out","一起出去、廝混"],["turn to","求助於（某人）"],["take...personally","認為是針對個人"]]},
+ r:{name:"👀 認識字彙",audio:true,pairs:[["update","最新動態；更新","n. [C] / vt."],["Facebook","臉書","n."],["Instagram","圖片視訊分享社交軟體","n."],["LINE","即時通訊軟體","n."],["app","應用程式","n. [C]"],["terribly","非常地","adv."]]},
+ b:{name:"🧲 搭配詞・基礎版",audio:false,pairs:[["to have a close relationship with sb.","和某人關係親密"],["in relation to N","有關……"],["sb. relate A to B","認為A和B相關"],["with satisfaction","滿足地"],["to draw inspiration from N","靈感來自N"],["to connect A with B","把A連接到B"],["to communicate with sb.","和某人溝通"],["a means of communication","一種通訊方式"],["to introduce sb. to sth.","讓某人初次體驗某事物"],["throughout the year","終年"],["text message","簡訊"],["to refresh Facebook Feed","更新Facebook的即時動態"],["to refresh oneself with N","用N讓自己恢復精神"],["a romantic relationship","愛戀關係"],["a romance novel","愛情小說"],["to focus one's mind on N","專注於N"],["main focus","重點"],["out of ignorance","出於無知"],["be ignorant of sth.","對……一無所知"],["to draw one's attention to N","讓某人注意到N"],["to deny + N/V-ing","否認N/V-ing"],["to respond to N with...","以……回應N"],["to make no response to N","對N沒有回應"],["in response to N","回應N"],["It disappoints sb. that...","某事讓某人失望"],["to one's great disappointment","讓某人大大失望"],["to take sth. personally","認為某事是針對個人"],["personal experience","個人經驗"]]},
+ a:{name:"🧲 搭配詞・進階版",audio:false,pairs:[["in relation to","關於……；與……有關係"],["with satisfaction","滿足地"],["draw inspiration from","從……得到靈感"],["connect with","建立良好關係"],["means of communication","通訊方式"],["throughout the year","一整年"],["text message","簡訊"],["refresh oneself with","用……讓自己恢復精神"],["focus one's mind on","專注於"],["out of ignorance","出於無知"],["draw one's attention to","讓某人注意到"],["in response to","對……做出回應"],["to one's great disappointment","讓某人大感失望的是"],["take...personally","針對……"],["make no response to","沒有任何回覆"],["in addition","此外"],["hang out","與某人一起出去"],["turn to","求助於某人"]]}
+};
+let mtCat='v',mtSel=null,mtSet=[];
+document.getElementById('mtCats').innerHTML=Object.entries(MATCH).map(([k,v])=>`<button class="btn sm ${k==='v'?'pink':''}" data-c="${k}" onclick="mtPick('${k}')">${v.name}</button>`).join('');
+function mtPick(k){mtCat=k;document.querySelectorAll('#mtCats .btn').forEach(b=>b.classList.toggle('pink',b.dataset.c===k));mtBuild();}
+function mtBuild(){
+  const cfg=MATCH[mtCat];mtSel=null;
+  mtSet=shuffle(cfg.pairs).slice(0,10);
+  document.getElementById('mtAudioNote').textContent=cfg.audio?'　🔊 點題目的喇叭可聽英文朗讀':'　（本分類不提供朗讀）';
+  document.getElementById('mtChips').innerHTML=shuffle(mtSet.map(p=>p[0])).map(w=>`<button class="wchip" data-w="${esc(w)}" onclick="mtSelect(this)">${esc(w)}</button>`).join('');
+  document.getElementById('mtQs').innerHTML=mtSet.map((p,i)=>`
+    <div class="q"><span class="num">${i+1}</span>${p[2]?`<span class="chip" style="background:var(--purple);margin-right:6px">${esc(p[2])}</span>`:''}<b>📝 ${esc(p[1])}</b>
+    <span class="slot" data-a="${esc(p[0])}" onclick="mtDrop(this)">　　？　　</span>
+    ${cfg.audio?`<button class="btn sm" data-say="${esc(p[0])}">🔊</button>`:''}</div>`).join('');
+  document.getElementById('mtScore').textContent='';
+  document.getElementById('mtAns').classList.remove('show');
+}
+function mtSelect(b){document.querySelectorAll('#mtChips .wchip').forEach(c=>c.classList.remove('sel'));b.classList.add('sel');mtSel=b;}
+function mtDrop(sl){
+  if(sl.dataset.filled){
+    const w=sl.dataset.filled;
+    const chip=document.querySelector(`#mtChips .wchip[data-w="${CSS.escape(w)}"]`);
+    if(chip)chip.classList.remove('used');
+    delete sl.dataset.filled;sl.textContent='　　？　　';sl.className='slot';return;
+  }
+  if(!mtSel){toast('請先點選 Word Bank 裡的一個詞彙 👆');return;}
+  sl.dataset.filled=mtSel.dataset.w;sl.textContent=mtSel.dataset.w;
+  mtSel.classList.add('used');mtSel.classList.remove('sel');mtSel=null;
+}
+function mtCheck(){
+  let right=0;
+  document.querySelectorAll('#mtQs .slot').forEach(sl=>{
+    const ok=sl.dataset.filled===sl.dataset.a;sl.classList.add(ok?'ok':'no');if(ok)right++;});
+  document.getElementById('mtScore').textContent=`✅ 本輪答對：${right} / ${mtSet.length}`;
+  const ans=document.getElementById('mtAns');
+  ans.innerHTML='<b>📖 參考解答：</b><br>'+mtSet.map((p,i)=>`${i+1}. ${esc(p[0])} — ${esc(p[1])}`).join('<br>');
+  ans.classList.add('show');
+  if(right===mtSet.length){addScore(200);boom();toast('🎉 全對！+200 分');}else addScore(-50);
+}
+mtBuild();
+
+/* ============ 通用題目元件 ============ */
+function revealBlock(id,html){return `<button class="btn sm green" onclick="document.getElementById('${id}').classList.toggle('show')">📖 參考解答：</button><div class="ans" id="${id}">${html}</div>`;}
+function mcQuestion(idx,item,prefix){
+  const opts=item.opts.map((o,i)=>`<button class="opt" onclick="mcPick(this,${i===item.a},'${prefix}${idx}')">(${'ABCD'[i]}) ${esc(o)}</button>`).join('');
+  return `<div class="q"><span class="num">${idx}</span><span class="stem">${item.stem}</span>
+   <div style="margin-top:8px">${opts}</div>
+   ${revealBlock(prefix+idx,`<b>答案：${'ABCD'[item.a]}</b><br>解析：${item.exp}`)}</div>`;
+}
+function mcPick(btn,correct,ansId){
+  const box=btn.parentElement;if(box.dataset.done)return;box.dataset.done=1;
+  if(correct){btn.classList.add('right');addScore(200);boom();}
+  else{btn.classList.add('wrong');addScore(-50);
+    [...box.children].forEach(b=>{if(b.getAttribute('onclick').includes('true'))b.classList.add('right');});}
+  document.getElementById(ansId).classList.add('show');
+}
+function fillQuestion(idx,stem,answer,note,prefix){
+  return `<div class="q"><span class="num">${idx}</span><span class="stem">${stem}</span>
+   <div class="row" style="margin-top:8px">
+     <input class="blank" id="${prefix}i${idx}" placeholder="填入答案">
+     <button class="btn sm" onclick="checkFill('${prefix}i${idx}','${esc(answer).replace(/'/g,"\\'")}','${prefix}${idx}')">✅ 檢查</button>
+     <button class="btn sm green" onclick="document.getElementById('${prefix}${idx}').classList.toggle('show')">📖 參考解答：</button>
+   </div>
+   <div class="ans" id="${prefix}${idx}"><b>答案：${esc(answer)}</b>${note?'<br>解析：'+note:''}</div></div>`;
+}
+function norm(s){return String(s).toLowerCase().replace(/[.,;'"\u2019]/g,'').replace(/\s+/g,' ').trim();}
+function checkFill(inId,ans,ansId){
+  const el=document.getElementById(inId);
+  const ok=ans.split('|').some(a=>norm(a)===norm(el.value));
+  el.style.borderColor=ok?'#34D399':'#F87171';
+  el.style.background=ok?'#ECFDF5':'#FEF2F2';
+  if(el.dataset.done)return;el.dataset.done=1;
+  if(ok){addScore(200);boom();toast('🎉 正確！+200');}else{addScore(-50);document.getElementById(ansId).classList.add('show');}
+}
+/* 多空格 */
+const SLOT_KEYS={};
+function slotsHTML(prefix,i,parts,en){
+  let n=0;
+  const line=esc(en).replace(/____/g,function(){n++;return `<input class="blank" style="width:130px;margin:2px" id="${prefix}${i}_${n-1}" placeholder="${n}">`;});
+  return `<div class="stem" style="line-height:2.9">${line}</div>
+   <div class="row" style="margin-top:6px">
+     <button class="btn sm" onclick="checkSlots('${prefix}',${i},${parts.length},'${prefix}a${i}')">✅ 檢查</button>
+     <button class="btn sm green" onclick="document.getElementById('${prefix}a${i}').classList.toggle('show')">📖 參考解答：</button>
+     <span class="mini" id="${prefix}s${i}"></span>
+   </div>`;
+}
+function slotMatch(key,val){
+  const n2=x=>norm(x).replace(/\s*\/\s*/g,'/');
+  const K=n2(key).split('/').filter(Boolean);
+  const S=n2(val).split('/').filter(Boolean);
+  if(!S.length)return false;
+  return S.every(x=>K.indexOf(x)>-1);
+}
+function checkSlots(prefix,i,n,ansId){
+  const keys=SLOT_KEYS[prefix+i];let right=0;
+  for(let k=0;k<n;k++){
+    const el=document.getElementById(prefix+i+'_'+k);if(!el)continue;
+    const ok=slotMatch(keys[k],el.value);
+    el.style.borderColor=ok?'#34D399':'#F87171';
+    el.style.background=ok?'#ECFDF5':'#FEF2F2';
+    if(ok)right++;
+  }
+  document.getElementById(prefix+'s'+i).textContent='　答對 '+right+' / '+n;
+  const box=document.getElementById(prefix+i+'_0');
+  if(box&&!box.dataset.scored){box.dataset.scored=1;
+    if(right===n){addScore(200);boom();toast('🎉 全對！+200');}else{addScore(-50);document.getElementById(ansId).classList.add('show');}}
+}
+
+/* ============ 4. Sentence Pattern ============ */
+/* 英文例句一行一句，句尾附 🔊 朗讀鈕 */
+function EXL(en,tail){return `<div class="exline">・<span class="exen">${esc(en)}</span>${tail?'<span class="mini"> '+tail+'</span>':''} <button class="btn sm" data-say="${esc(en)}">🔊</button></div>`;}
+document.getElementById('spNote').innerHTML=`
+<div class="hint">It is + adj. (+ for sb.) + to VR....　／　S + have/has + p.p.</div>
+<p style="font-size:14px"><b>語境</b></p>
+${EXL("It's freezing outside.")}
+${EXL("It is necessary for you to wear enough clothes.")}
+<p style="font-size:14px">爸爸提醒兒子「穿得暖」是必要的；因為 to wear enough clothes 較長，句首以虛主詞 it 代替，該段文字置於句尾。</p>
+<p style="font-size:14px">1. 句子中「to + VR」是語意上真正的主詞，但文字較長，故用 it 代替，避免句子頭重腳輕。</p>
+${EXL("To put personal information on social networking websites is dangerous.")}
+${EXL("It is dangerous to put personal information on social networking websites.","（→ 改寫後）")}
+<p style="font-size:14px">2. 此句型常用來表達說話者對「to + VR」的看法或評價；若要補充「進行此動作的是何者」，可在形容詞後加「for + sb.」。</p>
+${EXL("It is difficult for Sam to get up early in the morning.")}
+<p style="font-size:14px"><b>課文 Examples</b></p>
+${EXL("It is not easy to tell you this, but I still need to say it.","(line 2)")}
+${EXL("All this might sound romantic, but it is difficult for me to focus on school, and my grades are getting worse!","(line 21)")}
+<p style="font-size:14px"><b>基礎複習</b>：之前學過的 it 用來描述天氣，代替 the weather。</p>
+${EXL("It is raining outside.")}
+${EXL("It was warm and sunny yesterday.")}
+<p style="font-size:14px"><b>額外補充</b></p>
+<p style="font-size:14px">1. 表達「不……」時，not 放在 to VR 前；若句中有 for sb.，則 not 放在 for sb. 和 to VR 之間。</p>
+${EXL("It is hard not to sweat on a hot summer day.")}
+${EXL("It is difficult for Tom not to give up.")}
+<p style="font-size:14px">2. 不管後面的事情有幾件，主詞與動詞都是單數 It is。</p>
+${EXL("It is dangerous for us to use smartphones and drive cars at the same time.")}
+${EXL("It is fun to interact with students from other schools and make friends.")}
+<p style="font-size:14px"><b>📜 真實語料</b></p>
+${EXL("Look at me! Look at me! Look at me now! It is fun to have fun but you have to know how.","— Dr. Seuss")}
+${EXL("It's kind of fun to do the impossible.","— Walt Disney")}
+${EXL("It is nice to be important, but it's more important to be nice.","— John Templeton")}`;
+
+const SPA=[
+ {hint:"fun / play basketball with friends",ans:"It is fun to play basketball with friends.",exp:"示範題：It is + adj. + to VR。"},
+ {hint:"very meaningful / help others",ans:"It is very meaningful to help others.",exp:"形容詞前可加程度副詞 very。"},
+ {hint:"not polite / use your cellphone in class",ans:"It is not polite to use your cellphone in class.",exp:"否定 not 置於 be 動詞後修飾形容詞。"},
+ {hint:"important / students / be on time for class",ans:"It is important for students to be on time for class.",exp:"補充動作者時用 for + sb.。"},
+ {hint:"not good / Jack / leave work early",ans:"It is not good for Jack to leave work early.",exp:"It is not good for sb. to VR。"},
+ {hint:"necessary / everyone / make good use of his or her time",ans:"It is necessary for everyone to make good use of his or her time.",exp:"everyone 為單數，代名詞用 his or her。"}
+];
+document.getElementById('spA').innerHTML=SPA.map((q,i)=>`<div class="q"><span class="num">${i+1}</span>
+ <div class="stem">${esc(q.hint)}</div>
+ <textarea class="ta" placeholder="用 It is + adj. (+ for sb.) + to VR 造句..."></textarea>
+ ${revealBlock('spAa'+i,`<b>參考解答：</b>${esc(q.ans)}<br>解析：${q.exp}`)}</div>`).join('');
+
+const SPB=[
+ {d:"Me: What should I buy at the supermarket?<br>Mom: You should buy some eggs and sugar. They are necessary for the cake.",ans:"It is necessary to buy some eggs and sugar at the supermarket for the cake.",exp:"示範題：用 necessary 概括對話重點。"},
+ {d:"Terry: What do I have to prepare for the test?<br>Mandy: You have to prepare pens, pencils and erasers. They are important items.",ans:"It is important (for Terry) to prepare pens, pencils, and erasers for the test.",exp:"for Terry 可加可不加，用來點出動作者。"},
+ {d:"Steve: Did you finish the math exam in time?<br>Jerry: No, the test was very hard. I don't think anyone finished it in time.",ans:"It was hard (for anyone) to finish the math exam in time.",exp:"敘述過去的事，be 動詞用 was。"},
+ {d:"Nick: Why did you just kiss your friend?<br>Albert: Oh, that's very common here in France!",ans:"It is common (for people in France) to kiss their friends.",exp:"普遍現象用現在式 It is common...。"},
+ {d:"Teacher: You can't cheat on the test. That is unacceptable!<br>Student: I'm sorry. I won't do it again.",ans:"It is unacceptable (for a student) to cheat on the test.",exp:"cheat on the test 考試作弊。"},
+ {d:"Charlie: Is there anything that I need to bring to your party?<br>Ted: Some sodas would be wonderful. Thank you so much.",ans:"It would be wonderful (for Charlie) to bring some sodas to Ted's party.",exp:"would be 表委婉語氣。"}
+];
+document.getElementById('spB').innerHTML=SPB.map((q,i)=>`<div class="q"><span class="num">${i+1}</span>
+ <div class="stem">${q.d}</div>
+ <textarea class="ta" placeholder="Conclusion: It is..."></textarea>
+ ${revealBlock('spBa'+i,`<b>參考解答：</b>${esc(q.ans)}<br>解析：${q.exp}`)}</div>`).join('');
+
+const SPC=[
+ {q:"Not greeting others is impolite.",ans:"It is impolite not to greet others.",exp:"否定詞 not 放在 to VR 之前。"},
+ {q:"Not following the teacher's advice is improper.",ans:"It is improper not to follow the teacher's advice.",exp:"同上，not + to VR。"},
+ {q:"Admitting your mistakes is brave.",ans:"It is brave to admit your mistakes.",exp:"動名詞主詞改寫為 It is + adj. + to VR。"},
+ {q:"Working hard and making money are necessary.",ans:"It is necessary to work hard and make money.",exp:"即使後面有兩件事，主要動詞仍是單數 is。"},
+ {q:"Telling lies and stealing money are not right.",ans:"It is not right to tell lies and steal money.",exp:"兩個不定詞並列時，第二個 to 可省略。"}
+];
+document.getElementById('spC').innerHTML=SPC.map((q,i)=>`<div class="q"><span class="num">${i+1}</span>
+ <div class="stem">${esc(q.q)}</div>
+ <textarea class="ta" placeholder="→ It is..."></textarea>
+ ${revealBlock('spCa'+i,`<b>參考解答：</b>${esc(q.ans)}<br>解析：${q.exp}`)}</div>`).join('');
+
+const SPD=[
+ {zh:"要 Rita 不抽菸是很困難的。",ans:"It is very difficult for Rita not to smoke.",exp:"有 for sb. 時，not 放在 for sb. 與 to VR 之間。"},
+ {zh:"要 Andrea 不看電視是不可能的。",ans:"It is impossible for Andrea not to watch TV.",exp:"impossible + for sb. + not to VR。"},
+ {zh:"Tony 喝酒開車是很危險的。",ans:"It is dangerous for Tony to drink and drive.",exp:"drink and drive 酒後駕車。"},
+ {zh:"Debra 全職工作又照顧她的家人真的很艱難。",ans:"It is difficult for Debra to work full-time and take care of her family.",exp:"兩件事並列，動詞仍是單數 is。"},
+ {zh:"學生們上課打瞌睡跟考試作弊真是無法接受。",ans:"It is not acceptable for students to doze off in class and cheat on exams.",exp:"doze off 打瞌睡；cheat on exams 考試作弊。"}
+];
+document.getElementById('spD').innerHTML=SPD.map((q,i)=>`<div class="q"><span class="num">${i+1}</span>
+ <div class="zh">📝 ${esc(q.zh)}</div>
+ <textarea class="ta" placeholder="→ It is..."></textarea>
+ ${revealBlock('spDa'+i,`<b>參考解答：</b>${esc(q.ans)}<br>解析：${q.exp}`)}</div>`).join('');
+
+const SPE=[
+ {q:"That Billy failed the test is sad.",ans:"It is sad that Billy failed the test.",exp:"it 當 that 子句的虛主詞，that 子句移到句尾。"},
+ {q:"That Anne was admitted to NYU is really great!",ans:"It is really great that Anne was admitted to NYU!",exp:"be admitted to 被錄取。"},
+ {q:"That Jenny turned down John's proposal is surprising.",ans:"It is surprising that Jenny turned down John's proposal.",exp:"turn down 拒絕。"},
+ {q:"That the team won the championship is amazing!",ans:"It is amazing that the team won the championship!",exp:"win the championship 贏得冠軍。"},
+ {q:"That the 4-year-old child could perform magic tricks is unbelievable.",ans:"It is unbelievable that the 4-year-old child could perform magic tricks.",exp:"perform magic tricks 變魔術。"}
+];
+document.getElementById('spE').innerHTML=`<div class="hint">it 除了可以當不定詞 to VR 的虛主詞，也可以當 that 子句（that + S + V）的虛主詞。<br>・That Kevin won the lottery is true. → It is true that Kevin won the lottery.<br>・That Nelly's dog died last week is sad. → It is sad that Nelly's dog died last week.</div>`+
+SPE.map((q,i)=>`<div class="q"><span class="num">${i+1}</span><div class="stem">${esc(q.q)}</div>
+ <textarea class="ta" placeholder="→ It is..."></textarea>
+ ${revealBlock('spEa'+i,`<b>參考解答：</b>${esc(q.ans)}<br>解析：${q.exp}`)}</div>`).join('');
+
+function EXROW(n,en,fn){return `<div class="exline"><span class="num">${n}</span><span class="exen">${esc(en)}</span><span class="chip" style="background:var(--green)">功能 ${fn}</span><button class="btn sm" data-say="${esc(en)}">🔊</button></div>`;}
+document.getElementById('spPerf').innerHTML=`
+<div class="tagline">當課句型二｜現在完成式 S + have/has + p.p.</div>
+<p style="font-size:14px"><b>語境對話</b></p>
+${EXL("B: You're smiling. What happened?")}
+${EXL("G: I got a letter from Helen yesterday. We haven't seen each other since she moved to Canada four years ago.")}
+${EXL("B: Is she a close friend?")}
+${EXL("G: She is. We've been good friends for almost twenty years.")}
+<p style="font-size:14px"><b>現在完成式的三種功能</b><br>
+A. 描述在過去發生過、現在已經完成的活動或狀況。<br>
+B. 描述我們到目前為止曾有過的經驗。<br>
+C. 描述某個從過去一直持續到現在的活動、事件或狀態。</p>
+${EXROW(1,"I've just talked to Helen on the phone.","A")}
+${EXROW(2,"Rick has never been to the United States.","B")}
+${EXROW(3,"James and his best friend haven't seen each other since last June.","C")}
+${EXROW(4,"The company has successfully opened three new branches recently.","A")}
+${EXROW(5,"Melissa has been a big fan of Jolin for over five years.","C")}
+${EXROW(6,"Our school basketball team has won the championship six times.","B")}
+${EXROW(7,"A team of scientists has worked on the cure for AIDS for more than thirty years.","C")}
+<p style="font-size:14px;margin-top:10px"><b>課文 Examples</b></p>
+${EXL("Our relationship has been mostly satisfying, but I'm afraid it's over.","(line 3)")}
+${EXL("You've introduced me to so much - new music, new games, new knowledge, new friends, and more.","(line 13)")}
+${EXL("In fact, things have been totally different since you came into my life.","(line 15)")}
+<p style="font-size:14px"><b>📜 真實語料</b></p>
+${EXL("Anyone who has never made a mistake has never tried anything new.","— Albert Einstein")}
+${EXL("Unless you try to do something beyond what you have already mastered, you will never grow.","— Ralph Waldo Emerson")}
+${EXL("If I have seen further than others, it is by standing upon the shoulders of giants.","— Isaac Newton")}
+<p style="font-size:13px"><b>🎲 Apply &amp; Practice（桌遊版已收錄於「🎲 摘要大富翁」頁籤）</b>：四人一組，輪流擲骰子前進，踩到格子就用完整句子回答該格問題；答不出來就退回前一格，最先抵達終點者獲勝。</p>`;
+
+const SPF=[
+ ["Joyce ____ (prepare for) the party for two weeks.","has prepared for","for two weeks 表持續一段時間，用現在完成式；主詞 Joyce 為第三人稱單數，用 has。"],
+ ["Scientists ____ (discover) a new kind of energy source since 2000.","have discovered","since + 過去時間點，主要子句用現在完成式；主詞為複數 Scientists，用 have。"],
+ ["Mandy's boyfriend ____ (not call) her since he joined the army.","has not called|hasn't called","否定的現在完成式：has not + p.p.。"],
+ ["A group of students ____ (lose) their way in the forest since this morning.","have lost","lose 的過去分詞是 lost；a group of students 視為複數群體，此處用 have。"],
+ ["I ____ (be) too busy and ____ (not invite) my friends to my new house yet.","have been; have not invited|have been; haven't invited","yet 常與現在完成式連用；兩個動詞都要用完成式。"]
+];
+document.getElementById('spF').innerHTML=SPF.map((p,i)=>fillQuestion(i+1,esc(p[0]),p[1],p[2],'spF')).join('');
+
+const SPG=[
+ ["David 已經寫完考卷了。","David has finished the test.","描述過去發生、現在已完成的動作（功能 A）。"],
+ ["Belle 已經看過這個電影兩次了。","Belle has seen the movie two times.|Belle has seen the movie twice.","表經驗與次數（功能 B）。"],
+ ["Karl 已經不抽菸三年了。","Karl has not smoked for three years.|Karl hasn't smoked for three years.","for + 一段時間，表持續（功能 C）。"],
+ ["Thalia 已經住在臺北十年了。","Thalia has lived in Taipei for ten years.","live 的過去分詞 lived，搭配 for ten years。"],
+ ["Andrea 已經去過韓國五次了。","Andrea has been to Korea five times.","have been to 表「曾去過（已回來）」；have gone to 表「去了還沒回」。"]
+];
+document.getElementById('spG').innerHTML=SPG.map((p,i)=>fillQuestion(i+1,'📝 '+esc(p[0]),p[1],p[2],'spG')).join('');
+
+/* ============ 5. 例句填空 ============ */
+const CZV=[
+ ["There is a close r______p between Simon and his grandmother.","relationship"],
+ ["The two countries have developed a friendly r______p.","relationship"],
+ ["Whether one succeeds or not bears little r______n to their talent; it has more to do with their effort.","relation"],
+ ["Burkina Faso has broken diplomatic r______ns with Taiwan and established ties with China.","relations"],
+ ["Smoking has been proved to be closely r______d to lung cancer.","related"],
+ ["Working as a volunteer is a deeply s______g and rewarding experience.","satisfying"],
+ ["S______d with the waiter's service, the customer gave him a generous tip.","satisfied"],
+ ["The retired teacher gets a lot of s______n from working in his garden.","satisfaction"],
+ ["J.K. Rowling's success story has i______d many women to become writers.","inspired"],
+ ["The novel, which was i______d by a true story, has become a bestseller.","inspired"],
+ ["Chinese poets such as Wang Wei and Meng Haoran often sought i______n in nature.","inspiration"],
+ ["You should c______t this appliance to a power supply to make it work.","connect"],
+ ["The bridge c______s this remote town with the outside world.","connects"],
+ ["There is a c______n between air pollution and lung disease.","connection"],
+ ["If two people do not speak a common language, it is difficult for them to c______e with each other.","communicate"],
+ ["Sign language is a form of non-verbal c______n.","communication"],
+ ["Pearl milk tea has been i______d by Taiwan to many countries around the world.","introduced"],
+ ["At the beginning of his talk, the speaker gave a brief i______n to his topic.","introduction"],
+ ["The museum is open every day t______t the year except during the Chinese New Year.","throughout"],
+ ["Damien said he had sent you a m______e through e-mail.","message"],
+ ["After a hard day's work, I always r______ed myself with a hot bath.","refreshed"],
+ ["You can r______h your screen simply by pushing a button.","refresh"],
+ ["I read my diary to r______h my memories of my childhood.","refresh"],
+ ["After dinner, William and Anna took a r______c stroll in the park.","romantic"],
+ ["We find one of the greatest film r______s in Gone with the Wind.","romances"],
+ ["I can't f______s on my studies with so much noise around.","focus"],
+ ["Cultivating students' literacy is the f______s of attention in the current educational reform.","focus"],
+ ["Many students lack f______s in their lives; they don't seem to know what to aim for.","focus"],
+ ["The wife totally i______d her husband as if he didn't exist.","ignored"],
+ ["I______e about AIDS has given rise to discrimination against people with this disease.","Ignorance"],
+ ["The teacher snapped his fingers to catch his students' a______n.","attention"],
+ ["The politician d______d taking any bribes from the corporation.","denied"],
+ ["Fanny r______ded to my greeting with a nod.","responded"],
+ ["When asked what he thought about the scandal, the politician simply r______ded that he knew nothing about it.","responded"],
+ ["It is considered impolite to make no r______e after you're asked a question.","response"],
+ ["The new policy has received a positive r______e from the public.","response"],
+ ["Ross was d______d to see Rachael wasn't at his birthday party tonight.","disappointed"],
+ ["Fans were bitterly d______d by their country's loss in the World Cup.","disappointed"],
+ ["Much to my d______t, I wasn't admitted to my dream college.","disappointment"],
+ ["Robert took it p______y when the boss said some people needed to work harder.","personally"],
+ ["This locker is for p______l use only.","personal"],
+ ["Patience is one of the important p______l qualities needed to be a teacher.","personal"]
+];
+const CZI=[
+ ["澳洲的十二月不冷；其實，那時澳洲正值仲夏。","December is not cold in Australia. ____ ____, it's the middle of summer.","In fact","in fact 事實上，用來加強或修正前面說過的話。"],
+ ["Bill 正逐一瀏覽得獎者的名單來查看他是否是其中一位。","Bill is ____ ____ the list of winners to see if he is one of them.","going through","go through 徹底讀過、逐一查看；此處為現在進行式。"],
+ ["每個健行者都帶了傘和雨衣，以防下雨。","Each of the hikers brought an umbrella and a raincoat ____ ____ it rained.","in case","in case + S + V，以防萬一。"],
+ ["請記得帶點心來參加派對。此外，你該帶份禮物送給壽星男孩。","Please remember to bring a snack to the party. ____ ____, you should bring a gift for the birthday boy.","In addition","in addition 為轉折性副詞片語，多置於句首並用逗號隔開。"],
+ ["Alice 和她的朋友們總是在週五放學後聚在咖啡廳。","Alice and her friends always ____ ____ in a cafe after school on Fridays.","hang out","hang out 一起出去、廝混。"],
+ ["Tracy 跟朋友相處有問題時，總是向她的姐姐 Ivy 求助。","Tracy always ____ ____ her older sister Ivy when she has a problem with one of her friends.","turns to","turn to sb. 求助於某人；主詞第三人稱單數用 turns。"],
+ ["我沒有針對你，不過我不太喜歡你穿的襯衫。","Please don't ____ this ____, but I don't like your shirt.","take; personally","take sth. personally 認為某事是針對個人。"]
+];
+const CZC=[
+ {zh:"Jessica 過去與父母親的關係非常親密，但在就讀高中時，課外活動在她生活中扮演重要的角色。她想要與同學建立良好關係。",
+  en:"Jessica used to have a very close relationship with her parents, but while she was attending high school, extracurricular activities played an important role in her life. She wanted to ____.",
+  parts:["connect with her classmates"],full:"connect with her classmates",exp:"connect with sb. 與某人建立良好關係。"},
+ {zh:"她放學後花很多時間和同學出去閒晃，遇到問題時也不再向父母尋求協助。她發現在沉重的課業壓力下，在社群媒體上的互動，可以讓她恢復精神。此外，她喜歡寫詩，似乎也從網路上的訊息中，得到一些創作的靈感。",
+  en:"She spent a lot of time ____ and no longer ____ for help when she got into trouble. She found that she could ____ interactions on social media under the heavy pressure of schoolwork. ____, she liked to write poems and seemed to ____ online messages when she wrote poetry.",
+  parts:["hanging out with her classmates","turned to her parents","refresh herself with","In addition","draw inspiration from"],
+  full:"hanging out with her classmates ; turned to her parents ; refresh herself with ; In addition ; draw inspiration from",
+  exp:"hang out with sb.／turn to sb. for help／refresh oneself with N／in addition／draw inspiration from N。"},
+ {zh:"她的行為和態度讓爸媽注意到她的改變。畢竟，她已經今年一整年都過著這樣的生活。而當爸媽試圖讓她了解課業的重要性時，她完全不理會。",
+  en:"Her behavior and attitude ____ her changes. After all, she had been living like this ____. When her parents tried to make her realize the importance of schoolwork, she totally ignored them.",
+  parts:["drew her parents' attention to","throughout the whole year"],
+  full:"drew her parents' attention to ; throughout the whole year",
+  exp:"draw one's attention to N 讓某人注意到N；throughout the whole year 一整年。"},
+ {zh:"今天早上當媽媽問她問題時，她完全沒有回應。當時她正在更新臉書的即時動態。令她失望的是，她沒有看到任何同學的新貼文。",
+  en:"When her mother asked her a question this morning, she ____ at all. She was refreshing her Facebook news feed at the time. ____, she didn't see any new posts from any of her classmates.",
+  parts:["made no response","To her disappointment"],
+  full:"made no response ; To her disappointment",
+  exp:"make no response to N 對N沒有回應；to one's disappointment 令某人失望的是。"},
+ {zh:"十分鐘後，她最要好的朋友傳了 LINE 訊息給她，上面寫道：「請不要認為我是針對妳，不過我不喜歡妳的新鞋子。事實上，妳穿深色比較好看。」",
+  en:"Ten minutes later, her best friend sent her a LINE message that said, \"Please don't ____ this ____, but I don't like your new shoes. In fact, I think you look better in dark colors.\"",
+  parts:["take","personally"],full:"take ; personally",exp:"take sth. personally 認為某事是針對個人。"},
+ {zh:"Jessica 用一個小豬貼圖回應她朋友的 LINE 訊息，決定今天一整天都不跟她說話。她也決定今天要專心背英文單字和寫數學作業。也許她爸媽說的話是有些道理的。",
+  en:"Jessica ____ her friend's LINE message with a pig sticker, and she decided not to talk to her ____. She also determined to ____ her English vocabulary and math homework. Maybe what her parents had said made some sense after all.",
+  parts:["responded to","throughout the day","focus her mind on"],
+  full:"responded to ; throughout the day ; focus her mind on",
+  exp:"respond to N with... 以……回應N；throughout the day 一整天；focus one's mind on N 專注於N。"}
+];
+const CZG=[
+ {zh:"每當 Jack 遇到困難時，他總是會向他最好的朋友尋求建議。",
+  en:"Whenever Jack faces a problem, he always ____ ____ his best friend for advice.",
+  parts:["turns","to"],full:"turns ; to",exp:"turn to sb. for advice 向某人尋求建議；主詞第三人稱單數用 turns。"},
+ {zh:"我總是會帶額外的電池以防我的相機在旅途中沒電。",
+  en:"I always bring extra batteries ____ ____ my camera runs out of power during trips.",
+  parts:["in","case"],full:"in ; case",exp:"in case + S + V 以防萬一。"},
+ {zh:"雖然她們一開始不喜歡彼此，但 Elphaba 和 Glinda 後來常常在校園裡一起廝混。",
+  en:"Although they didn't like each other at first, Elphaba and Glinda later often ____ ____ together on campus.",
+  parts:["hung","out"],full:"hung ; out",exp:"hang out 的過去式為 hung out。"},
+ {zh:"這部電影很有趣。除此之外，它還教導我們善與惡之間的界線並非絕對。",
+  en:"This movie is entertaining. ____ ____, it teaches us that the line between good and evil is not absolute.",
+  parts:["In","addition"],full:"In ; addition",exp:"In addition 置於句首並用逗號隔開。"},
+ {zh:"Sophia 心情不好，所以對每個人都很兇。這不是針對你。",
+  en:"Sophia is in a bad mood, so she's being mean to everyone. Don't ____ ____ ____.",
+  parts:["take","it","personally"],full:"take ; it ; personally",exp:"take it personally 認為是針對自己。"}
+];
+const CZH=[
+ {tag:"1-1",zh:"對高中生而言，提早探索自己的興趣和優勢是很重要的。",
+  ans:"It is important for high school students to explore their interests and strengths early.",
+  note:"<b>句型說明</b>：It is + adj. + for sb. + to VR，虛主詞 it 代替過長的不定詞主詞。<br><b>重要單字片語</b>：explore one's interests 探索興趣；strengths 優勢（複數）。<br><b>文法時態</b>：陳述普遍事實，用現在簡單式 is；for high school students 為不定詞的意義上主詞。"},
+ {tag:"1-2",zh:"然而，許多學生過度專注於考試成績，所以他們忽略發展多元能力（diverse ability）的機會。",
+  ans:"However, many students focus too much on exam scores, so they ignore opportunities to develop diverse abilities.",
+  note:"<b>句型說明</b>：However 為轉折副詞，其後加逗號；so 引導結果子句。<br><b>重要單字片語</b>：focus on 專注於；too much 過度；ignore 忽略；opportunities to VR 做某事的機會。<br><b>文法時態</b>：描述現況用現在簡單式；abilities 用複數呼應 diverse。"},
+ {tag:"2-1",zh:"社群媒體已經讓跨文化的（cross-cultural）交流對各地的人們來說都變得比以前更容易。",
+  ans:"Social media has made cross-cultural communication easier than (ever) before for people everywhere.",
+  note:"<b>句型說明</b>：make + O + adj.（受詞補語用形容詞比較級 easier）。<br><b>重要單字片語</b>：cross-cultural communication 跨文化交流；than ever before 比以前更……。<br><b>文法時態</b>：「已經讓……」用現在完成式 has made；social media 視為單數。"},
+ {tag:"2-2",zh:"因此，我們應該學習理解他人而不是忽略他們的感受和個人的想法。",
+  ans:"Therefore, we should learn to understand others instead of ignoring their feelings and personal ideas.",
+  note:"<b>句型說明</b>：instead of + V-ing 而不是做某事。<br><b>重要單字片語</b>：learn to VR 學習做某事；ignore 忽略；personal ideas 個人的想法。<br><b>文法時態</b>：should + 原形動詞表建議；instead of 為介系詞，後接動名詞 ignoring。"}
+];
+document.getElementById('czV').innerHTML='<div class="mini" style="margin-bottom:8px">看提示字首字尾填入單字。</div>'+
+ shuffle(CZV).map((p,i)=>fillQuestion(i+1,esc(p[0]),p[1],'',"czV")).join('');
+document.getElementById('czI').innerHTML=shuffle(CZI).map((p,i)=>`<div class="q"><span class="num">${i+1}</span><div class="zh">📝 ${esc(p[0])}</div><div class="stem">${esc(p[1])}</div>
+ <div class="row" style="margin-top:6px"><input class="blank" style="width:100%" id="czIi${i}" placeholder="填入完整片語（多格請用分號隔開）">
+ <button class="btn sm" onclick="checkFill('czIi${i}','${p[2]}','czIa${i}')">✅ 檢查</button>
+ <button class="btn sm green" onclick="document.getElementById('czIa${i}').classList.toggle('show')">📖 參考解答：</button></div>
+ <div class="ans" id="czIa${i}"><b>答案：${p[2]}</b><br>解析：${p[3]}</div></div>`).join('');
+document.getElementById('czC').innerHTML=shuffle(CZC).map((q,i)=>{SLOT_KEYS['czC'+i]=q.parts;
+ return `<div class="q"><span class="num">${i+1}</span><div class="zh">📝 ${esc(q.zh)}</div>
+ ${slotsHTML('czC',i,q.parts,q.en)}
+ <div class="ans" id="czCa${i}"><b>答案：${esc(q.full)}</b><br>解析：${esc(q.exp)}</div></div>`;}).join('');
+document.getElementById('czG').innerHTML=shuffle(CZG).map((q,i)=>{SLOT_KEYS['czG'+i]=q.parts;
+ return `<div class="q"><span class="num">${i+1}</span><div class="zh">📝 ${esc(q.zh)}</div>
+ ${slotsHTML('czG',i,q.parts,q.en)}
+ <div class="ans" id="czGa${i}"><b>答案：${esc(q.full)}</b><br>解析：${esc(q.exp)}</div></div>`;}).join('');
+document.getElementById('czH').innerHTML='<div class="hint">✍️ 寫下你的英文翻譯，按【✅ Check Answers】才會出現參考答案與句型說明。也可以按【🤖 AI 老師點評】取得拼字／文法／時態的即時建議。</div>'+
+ CZH.map((q,i)=>`<div class="q"><span class="num">${q.tag}</span><div class="zh">📝 ${esc(q.zh)}</div>
+ <textarea class="ta" id="czHt${i}" placeholder="請寫下你的英文翻譯..."></textarea>
+ <div class="row" style="margin-top:6px">
+  <button class="btn sm pink" onclick="aiGrade(${i})">🤖 AI 老師點評</button>
+  <button class="btn sm green" onclick="document.getElementById('czHa${i}').classList.toggle('show')">✅ Check Answers</button></div>
+ <div id="czHf${i}"></div>
+ <div class="ans" id="czHa${i}"><b>參考答案：</b>${esc(q.ans)}<br>${q.note}</div></div>`).join('');
+
+function aiGrade(i){
+  const el=document.getElementById('czHt'+i);const raw=(el.value||'').trim();
+  if(!raw){toast('⚠️ 請先寫下你的英文翻譯再送出喔！');return;}
+  const ref=CZH[i].ans;
+  let fixed=raw.charAt(0).toUpperCase()+raw.slice(1);
+  fixed=fixed.replace(/\bi\b/g,'I').replace(/\bdont\b/gi,"don't").replace(/\bits\s+is\b/gi,'it is');
+  if(!/[.!?]$/.test(fixed))fixed+='.';
+  const refW=ref.toLowerCase().replace(/[^a-z\s]/g,' ').split(/\s+/).filter(w=>w.length>3);
+  const myW=new Set(fixed.toLowerCase().replace(/[^a-z\s]/g,' ').split(/\s+/));
+  const hit=refW.filter(w=>myW.has(w)).length;
+  const rate=refW.length?hit/refW.length:0;
+  const miss=refW.filter(w=>!myW.has(w)).slice(0,5);
+  const score=Math.min(4,Math.max(0.5,Math.round((0.5+rate*3.5)*2)/2));
+  const punct=/[.!?]$/.test(raw)?'句尾標點正確 ✨':'句尾別忘了加句號喔！';
+  const cap=/^[A-Z]/.test(raw)?'首字母大寫正確 ✨':'英文句子的第一個字母要大寫喔！';
+  document.getElementById('czHf'+i).innerHTML=`<div class="card" style="margin-top:10px;border-color:#F9A8D4;background:#FFF9FC">
+   <div style="font-weight:900;font-size:16px">🤖 AI 老師熱情點評</div>
+   <div class="box" style="background:var(--pink)"><div class="lbl">【你的回答】</div>${esc(raw)}</div>
+   <div class="box" style="background:var(--green)"><div class="lbl" style="color:#047857">【拼字與標點自動微調】</div>${esc(fixed)}</div>
+   <div class="box" style="background:var(--blue)"><div class="lbl" style="color:#2563EB">【老師的分析與建議】</div>
+     <div>・拼字大小寫：${cap}</div><div>・標點符號：${punct}</div>
+     <div>・關鍵字詞掌握度：${Math.round(rate*100)}%${miss.length?'；可以再想想這些概念的英文怎麼說：<b>'+esc(miss.join(', '))+'</b>':'，關鍵字全數到位，太棒了！'}</div>
+     <div>・句型與時態：請對照下方【✅ Check Answers】的句型說明，確認虛主詞 it、for sb.、to VR 或現在完成式的結構是否完整。</div></div>
+   <div class="box" style="background:var(--yellow)"><div class="lbl">【獲得分數】</div><b style="font-size:18px">${score} / 4</b>
+     <div class="mini" style="margin-top:6px">哇！同學，你願意動筆寫就已經超越很多人了！整體邏輯看得出你有認真思考，把上面幾個小地方補起來，這句話就會非常漂亮。繼續加油，成就努力自信的自己！💪🌟</div></div>
+   </div>`;
+  if(!el.dataset.scored){el.dataset.scored=1;if(score>=3.5){addScore(200);boom();}else addScore(-50);}
+}
+
+/* 文意字彙專用：空格不在句首時，答案一律必須小寫，寫成大寫不給分 */
+function wmQuestion(idx,stem,answer,note,atStart){
+  const need=atStart?'':'<div class="mini" style="margin-top:4px">✍️ 提示：此空格不在句首，答案必須全部小寫。</div>';
+  return `<div class="q"><span class="num">${idx}</span><span class="stem">${stem}</span>
+   ${need}
+   <div class="row" style="margin-top:8px">
+     <input class="blank" id="wmi${idx}" placeholder="填入答案">
+     <button class="btn sm" onclick="checkFillWM(${idx},'${esc(answer).replace(/'/g,"\\'")}',${atStart?'true':'false'})">✅ 檢查</button>
+     <button class="btn sm green" onclick="document.getElementById('wm${idx}').classList.toggle('show')">📖 參考解答：</button>
+   </div>
+   <div class="ans" id="wm${idx}"><b>答案：${esc(answer)}</b>${note?'<br>解析：'+note:''}</div></div>`;
+}
+function checkFillWM(idx,ans,atStart){
+  const el=document.getElementById('wmi'+idx),ansEl=document.getElementById('wm'+idx);
+  const val=(el.value||'').trim();
+  const spellOK=ans.split('|').some(a=>norm(a)===norm(val));
+  const caseOK=atStart?true:(val===val.toLowerCase());
+  const ok=spellOK&&caseOK;
+  el.style.borderColor=ok?'#34D399':'#F87171';
+  el.style.background=ok?'#ECFDF5':'#FEF2F2';
+  if(!caseOK&&spellOK)toast('⚠️ 拼字正確，但此空格不在句首，必須寫成小寫「'+ans.toLowerCase()+'」，本題不給分。');
+  if(el.dataset.done)return;el.dataset.done=1;
+  if(ok){addScore(200);boom();toast('🎉 正確！+200');}
+  else{addScore(-50);
+    if(!caseOK&&spellOK)ansEl.innerHTML='<b>答案：'+esc(ans)+'</b><br>❗大小寫錯誤：此空格不在句首，英文單字必須全部小寫，寫成大寫不算正確。<br>'+ansEl.innerHTML.split('<br>').slice(1).join('<br>');
+    ansEl.classList.add('show');}
+}
+/* ============ 6. 文意字彙 ============ */
+const WM=[
+ ["Pretty Woman is a r______c movie about a wealthy man who falls in love with a woman who has sex with people for money.","romantic","《麻雀變鳳凰》是一部關於一個富人愛上妓女的浪漫愛情電影。"],
+ ["It's not allowed to leave your p______l belongings to reserve a study space in the library. When you leave your seat, please take your things with you.","personal","請勿在圖書館用私人物品占位置。當你離開時，請把你的東西帶走。"],
+ ["There is no d______ying that Mother Teresa was one of the most caring people in the world, taking care of the poor and needy all her life.","denying","無可否認的是德雷莎修女是世界上最有愛心的人之一，她一生都在照顧窮人和有需要的人。"],
+ ["Mary's children kept her in i______e of their plan to throw a surprise party for her birthday.","ignorance","Mary 的小孩不讓她知道他們要為她生日辦驚喜派對的計畫。"],
+ ["In the video, a teacher i______ed the causes of earthquakes and what people should avoid during an earthquake.","introduced","在這部影片中，一位老師介紹地震的成因和在地震中人們應該避免做的事。"],
+ ["He d______ied the charge of murder in the court. He said he didn't know the victim at all.","denied","他在法庭上否認謀殺的控訴。他說他根本不認識受害者。"],
+ ["Oscars are given to those who have achieved great a______ts in the film industry.","accomplishments","奧斯卡獎是頒給那些在電影界有傑出成就的人。"],
+ ["To his d______t, he didn't get the job he applied for.","disappointment","讓他失望的是，他沒有得到他所應徵的工作。"],
+ ["Born deaf and dumb, Jason has difficulty c______ting with people.","communicating","天生聾啞，Jason 和人溝通有困難。"],
+ ["Albert smiled with s______n as he placed the piece of exotic seafood into his mouth.","satisfaction","當 Albert 將異國海鮮料理放入他的嘴巴時，他滿足地微笑。"],
+ ["The c______n between smoking and heart disease has been proven. You had better quit smoking for your health's sake.","connection","吸菸和心臟病之間的關係已經被證實。為了健康，你最好戒菸。"],
+ ["The c______n between smoking and heart disease has been proven. You had better quit smoking for your health's sake.","connection","吸菸和心臟病之間的關係已經被證實。為了健康，你最好戒菸。"],
+ ["He took out the camera and adjusted the f______s so that he could take a clear picture of the birds in the woods.","focus","他拿出照相機，調整好焦距才好拍攝出林子裡小鳥清楚的照片。"],
+ ["J.K. Rowling drew i______n from ancient Greek stories about gods and goddesses when she wrote the Harry Potter books.","inspiration","J.K. 羅琳創作哈利波特系列時從古希臘關於眾神的故事中獲取靈感。考點句構：draw inspiration from 從某處獲取靈感。"],
+ ["Since I got a pay raise, I have been living in a r______ely comfortable life.","relatively","自從加薪後，我過著比較優渥的生活。"]
+];
+document.getElementById('wmBox').innerHTML=WM.map((p,i)=>wmQuestion(i+1,esc(p[0]),p[1],esc(p[2]),/^\s*[A-Za-z]?_/.test(p[0]))).join('');
+
+/* ============ 7. 文法選擇 ============ */
+const GR=[
+ ["She has moved to the United States since she ____ married.",["had gotten","got","gets","has gotten"],1,"S + have/has + p.p. + since + 過去的時間點或事件，since 子句用過去簡單式。"],
+ ["It is necessary ____ your seat belt while driving.",["fastening","for fastening","to fasten","fasten"],2,"It + be + adj. (for sb.) to VR.，虛主詞 it 代替不定詞真主詞。"],
+ ["It is unwise ____ people to spend so much time on online games.",["of","for","with","as"],0,"It + be + adj. + of sb. + to VR. 本句型的形容詞在形容人的特質，常見形容詞有 kind, foolish, unwise, thoughtful, careless 等。"],
+ ["Eric often works late ____ the night in order to earn more money to support his family.",["with","into","upon","from"],1,"本題考點為 late into the night，表「直到深夜」，故答案要選擇 into。"],
+ ["I have to ask the teacher ____.",["who is that woman","what to do next","is it correct","he was the guest"],1,"ask + sb. + sth.，受詞須為名詞或名詞片語（wh- + to VR）。"],
+ ["She refused to put on the long dress because she was afraid ____ her classmates would laugh at her.",["of","to","that","for"],2,"afraid of + V-ing；afraid to + VR；afraid that + S + V。"],
+ ["Having so many classes in a day ____ boring and tiring.",["be","being","are","is"],3,"動名詞當主詞，動詞為單數動詞。"],
+ ["Karen is busy ____ dinner for the whole family in the kitchen.",["prepares","prepared","to prepare","preparing"],3,"本題考點為 be busy + V-ing，表「忙著做……」，故答案要選擇 preparing。"],
+ ["You had better ask the writer for his autograph now, because he ____ soon.",["leaves","left","is leaving","be leaving"],2,"現在進行式表達未來式。"],
+ ["If you really want to lose weight, you should stop ____ so much junk food and start to exercise more.",["eating","eat","eaten","eats"],0,"本題考點為 stop + V-ing，表「停止做某事」，故此處要選擇動名詞 eating。"],
+ ["It is necessary that we come up with a way to ____ this difficult problem as soon as possible.",["solving","solve","solves","solved"],1,"本題考點為 a way to VR，表「……的方法」，to 後面要接原形動詞，故答案要選擇 solve。"],
+ ["No matter how busy he is, Richard always tries to spend some time ____ his family every week.",["from","into","with","upon"],2,"本題考點為 spend + 時間 + with + 對象，表「花時間陪伴……」，故答案要選擇 with。"],
+ ["Mastering a foreign language ____ a lot of time, effort, and practice.",["requiring","to require","require","requires"],3,"本句是以動名詞片語 Mastering a foreign language 當作主詞，要視為單數，故要搭配單數動詞 requires。"],
+ ["Tina usually spends a lot of time ____ hard in the library when the final exams are approaching.",["studying","studies","to study","studied"],0,"本題考點為 spend + 時間 + V-ing，表「花時間做某事」，時間後面要接動名詞，故答案要選擇 studying。"]
+];
+document.getElementById('grBox').innerHTML=GR.map((g,i)=>mcQuestion(i+1,{stem:esc(g[0]).replace(/____/g,'<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>'),opts:g[1],a:g[2],exp:g[3]},'gr')).join('');
+
+/* ---- 克漏字 Dear John ---- */
+const CLZ=[
+ {opts:["scared","terrified","afraid","frightened"],a:2,exp:"(C) afraid ✔ I'm afraid (that) + S + V 是固定用法，表「（很遺憾地）恐怕……」，用來婉轉傳達壞消息，正好對應前句 This isn't easy to say。<br>(A) scared／(B) terrified／(D) frightened ✘ 三者都指真實的恐懼、受驚，語氣強烈，不能用於這種客套語氣。<br>補充辨義：I'm afraid so.／I'm afraid not. 皆為 afraid 獨有的語用。"},
+ {opts:["break","breaks","breaking","broken"],a:1,exp:"動名詞片語 Leaving you 作主詞，缺的是主要動詞；動名詞主詞視為單數，故用 breaks。<br>(A) ✘ 主詞非複數。(C) ✘ V-ing 不能單獨當主要動詞。(D) ✘ 過去分詞同樣不能當主要動詞。<br>片語補充：break one's heart 令某人心碎。"},
+ {opts:["a lot of","little","anything","something"],a:3,exp:"have something to do = 有事情可做，不定詞 to do 修飾不定代名詞。<br>(A) ✘ a lot of 後必須接名詞。(B) ✘ 帶否定意味，與 always 及讚美語氣矛盾。(C) ✘ 多用於否定、疑問或條件句。"},
+ {opts:["find","to finding","finds","found"],a:0,exp:"help + O + (to) VR：help me find the answer。<br>(B) ✘ help 後不接 to + V-ing。(C)(D) ✘ 受詞補語位置不可用限定動詞形式。"},
+ {opts:["although","unless","since","if"],a:2,exp:"主要子句為現在完成式 things have been totally different，需搭配 since 引導時間副詞子句，且 since 子句用過去簡單式。<br>(A) ✘ 語意不構成轉折。(B) ✘ 語意不通。(D) ✘ 已發生的事實非假設。"},
+ {opts:["less and less","again and again","for a while","all of a sudden"],a:1,exp:"throughout the day 暗示高頻率、反覆的動作，故用 again and again。<br>(A) ✘ 語意完全相反。(C) ✘ 強調持續長度而非次數。(D) ✘ 指單一瞬間事件。"},
+ {opts:["hears","brings","allows","sounds"],a:3,exp:"感官連綴動詞 look/smell/taste/sound/feel + adj.。this sounds romantic。<br>(A) ✘ hear 是及物一般動詞。(B) ✘ bring 後須接名詞受詞。(C) ✘ allow sb. to VR。<br>提醒：若要接名詞，須寫成 sounds like romance。"},
+ {opts:["paying","to pay","not pay","for paying"],a:0,exp:"be busy (in) V-ing = 忙於做某事，故用 paying attention to you。<br>(B) ✘ too busy to VR 語意會變成「忙到無法注意你」，與全文相反。(C) ✘ 結構破碎。(D) ✘ 慣用為 be busy with + N 或 be busy V-ing。"},
+ {opts:["to invite","and invite","inviting","invite"],a:2,exp:"stop + V-ing 表「停止（正在做的事）」。<br>(A) ✘ stop to VR 意為「停下來去做另一件事」。(B) ✘ 前後矛盾。(D) ✘ stop 之後不可直接接原形動詞。<br>片語補充：invite sb. out 邀某人外出。"},
+ {opts:["as","with","for","to"],a:1,exp:"spend time with sb. = 與某人共度時光，是固定搭配。<br>(A) ✘ 語意不合。(C) ✘ 應用 spend time on + N 或 spend time (in) V-ing。(D) ✘ 非標準用法。"}
+];
+const CLZ_TEXT=`Dear John,<br><br>
+This isn't easy to say, but I'm leaving you. Our relationship has been good, but I'm {1} it's over. Leaving you {2} my heart because we've had such good times together. When you're around, I always have {3} to do. I can ask you anything, and you help me {4} the answer. You've also introduced me to so many different things.<br><br>
+Actually, things have been totally different {5} you entered my life. After I wake up, I check you {6} throughout the day. Maybe this {7} romantic, but I can't focus at school, and my grades are getting worse. Also, I always look at you and ignore everyone else. When my friends try to chat with me, I am too busy {8} attention to you. What if they stop {9} me out? I love that you are always by my side, but I seldom speak to my family.<br><br>
+Please don't take this personally. You're wonderful, and I will miss you! But now I need to focus on my studies and spend more time {10} my friends. I hope you understand. For the last time, goodbye!<br><br>
+Sincerely,<br>Sally`;
+document.getElementById('clzText').innerHTML='<div class="stem" style="line-height:2.6">'+
+ CLZ_TEXT.replace(/\{(\d+)\}/g,function(_,n){
+   const i=parseInt(n)-1;
+   return `<select class="drop" id="clz${i}" onchange="clzPick(${i})"><option value="-1">　${n}　▾</option>`+
+     CLZ[i].opts.map((o,k)=>`<option value="${k}">(${'ABCD'[k]}) ${o}</option>`).join('')+`</select>`;
+ })+'</div>';
+document.getElementById('clzAns').innerHTML=CLZ.map((q,i)=>
+ `<div class="q"><span class="num">${i+1}</span><b>解析</b>
+  ${revealBlock('clza'+i,`<b>答案：(${'ABCD'[q.a]}) ${esc(q.opts[q.a])}</b><br>${q.exp}`)}</div>`).join('');
+function clzPick(i){
+  const s=document.getElementById('clz'+i);
+  if(s.dataset.done)return;
+  const v=parseInt(s.value);if(v<0)return;
+  s.dataset.done=1;
+  const ok=v===CLZ[i].a;
+  s.style.background=ok?'#DCFCE7':'#FEE2E2';s.style.borderColor=ok?'#86EFAC':'#FCA5A5';
+  if(ok){addScore(200);boom();}else{addScore(-50);document.getElementById('clza'+i).classList.add('show');}
+}
+
+/* ---- 文意選填 三篇 ---- */
+const SEL=[
+ {title:"文意選填 1",
+  text:`I may have introduced coke and smoke on a positive note, but no one can {1} that they are awful things! Like most junk food, soft drinks are full of sugar, and it has been proven that sugar is {2} to heart and liver diseases. Junk food (and Facebooking all day) also makes you fat, which is hard for me to {3}! As for cigarette smoking, it gives bad breath and causes cancer. I don't know about you, but I was certainly {4} when I heard about the problems with sugar.<br><br>
+It didn't take long before my health suffered. I felt awful and I turned my {5} to health-related information. Then one day, after making a pact with my father, I got {6} enough to quit. Yes, I quit both Facebook and junk food! I had a few chats with my mom to make sure I'd have her support; I {7} all my friends about my decision; I told them to call me if they wanted to {8}; I told everyone that I still valued my {9} with them. Then, I quit!<br><br>
+Quitting was hard - for a while. But was I {10} with the results? Yes! For I finally found romance.`,
+  bank:["attention","messaged","ignore","satisfied","disappointed","deny","connected","relationship","communicate","inspired"],
+  ans:["deny","connected","ignore","disappointed","attention","inspired","messaged","communicate","relationship","satisfied"],
+  key:"①F 否認　②G 連結　③C 忽視　④E 失望　⑤A 注意力　⑥J 激勵　⑦B 傳訊息　⑧I 溝通　⑨H 關係　⑩D 滿意"},
+ {title:"文意選填 2",
+  text:`I like Facebook and I have a lot of Facebook friends! So don't {1} if you don't like my comments about the social media giant. You can do almost anything on Facebook, and here's what I did: I chatted with my family. I {2} all my friends. I introduced myself to ladies and tried to find romance.<br><br>
+Okay, {3} you need to know, I never actually found romance. But I did play a lot of games! There are thousands of games on Facebook and I {4} dozens of them. Some were very {5}; some were disappointments. All required {6}; none required inspiration. And I had a problem: all my Facebook activities left me no time for real life! {7}, it's reasonable to say that "I had no life." This was a problem that I have {8} for a very long time. I was always {9} on Facebook; I was always {10} my Facebook feed. I had lots of Facebook "friends" but I've never met most of them! In short, nothing was real! That's the problem with Facebook, and that's how I started on a journey back into the real world.`,
+  bank:["take it personally","refreshing","focus","In fact","went through","denied","messaged","hanging out","satisfying","in case"],
+  ans:["take it personally","messaged","in case","went through","satisfying","focus","In fact","denied","hanging out","refreshing"],
+  key:"①A 認為是針對個人　②G 傳訊息　③J 以防萬一　④E 經歷；徹底讀過　⑤I 令人滿意的　⑥C 專注　⑦D 事實上　⑧F 否認　⑨H 與某人一起出去　⑩B 刷新"},
+ {title:"文意選填 3",
+  text:`Smartphones are mini computers these days. {1} to making calls, people also use smartphones for almost everything else! After all, it's natural for people to find new ways to use new toys. But I primarily use mine to {2}. With my smartphone, I {3} myself to new clients on Facebook. I chat with my friends on LINE. I draw attention on Instagram with photos from my family holidays. And I inspire others on Twitter with my positive views on life. {4}, I even use my smartphone to find new romance!<br><br>
+{5} you're wondering, it hasn't always been this way. {6} the past ten years, I've used my smartphone for many other things. I played games - lots of games. I played so much that I ignored real life! I did not pay {7} in school. I also had little {8} with my family. As you might imagine, my parents were {9}. They deleted all my games, so I {10} Facebook... We went back and forth like that, and those were painful times. But happily, those days are behind me. Now I'm a changed man!`,
+  bank:["connection","attention","In fact","In addition","Throughout","In case","introduce","disappointed","turned to","communicate"],
+  ans:["In addition","communicate","introduce","In fact","In case","Throughout","attention","connection","disappointed","turned to"],
+  key:"①D 除此之外　②J 溝通　③G 介紹　④C 事實上　⑤F 以防萬一　⑥E 從頭到尾　⑦B 注意　⑧A 關係；關聯　⑨H 失望　⑩I 轉向"}
+];
+let selPick=[null,null,null];
+document.getElementById('selBox').innerHTML=SEL.map((s,si)=>{
+  const bank=shuffle(s.bank.map((w,i)=>[w,'ABCDEFGHIJ'[i]]));
+  return `<div class="q"><div class="tagline">${s.title}</div>
+   <div class="bank"><div class="mini" style="margin-bottom:6px">🧺 選項（點一下選取，再點文中空格填入；點已填空格可退回）</div>
+   <div class="chips" id="selChips${si}">${bank.map(([w,l])=>`<button class="wchip" data-w="${esc(w)}" onclick="selSel(${si},this)">(${l}) ${esc(w)}</button>`).join('')}</div></div>
+   <div class="stem" style="line-height:2.5">${s.text.replace(/\{(\d+)\}/g,function(_,n){const k=parseInt(n)-1;
+     return `<span class="slot" style="min-width:120px" data-a="${esc(s.ans[k])}" onclick="selDrop(${si},this)">　${n}　</span>`;})}</div>
+   <div class="row" style="margin-top:8px"><button class="btn green sm" onclick="selCheck(${si})">✅ Check answers</button>
+   <button class="btn sm green" onclick="document.getElementById('sela${si}').classList.toggle('show')">📖 參考解答：</button>
+   <span class="mini" id="selS${si}"></span></div>
+   <div class="ans" id="sela${si}"><b>答案與解析：</b><br>${esc(s.key)}</div></div>`;
+}).join('');
+function selSel(si,b){document.querySelectorAll('#selChips'+si+' .wchip').forEach(c=>c.classList.remove('sel'));b.classList.add('sel');selPick[si]=b;}
+function selDrop(si,sl){
+  if(sl.dataset.filled){
+    const w=sl.dataset.filled;
+    const chip=document.querySelector(`#selChips${si} .wchip[data-w="${CSS.escape(w)}"]`);
+    if(chip)chip.classList.remove('used');
+    delete sl.dataset.filled;sl.textContent='　？　';sl.className='slot';sl.style.minWidth='120px';return;
+  }
+  if(!selPick[si]){toast('請先點選上方選項 👆');return;}
+  sl.dataset.filled=selPick[si].dataset.w;sl.textContent=selPick[si].dataset.w;
+  selPick[si].classList.add('used');selPick[si].classList.remove('sel');selPick[si]=null;
+}
+function selCheck(si){
+  const box=document.querySelectorAll('#selBox .q')[si];let right=0,tot=0;
+  box.querySelectorAll('.slot').forEach(sl=>{tot++;
+    const ok=norm(sl.dataset.filled||'')===norm(sl.dataset.a);
+    sl.classList.add(ok?'ok':'no');if(ok)right++;});
+  document.getElementById('selS'+si).textContent=`　答對 ${right} / ${tot}`;
+  if(box.dataset.scored)return;box.dataset.scored=1;
+  if(right===tot){addScore(200);boom();toast('🎉 全對！+200');}else{addScore(-50);document.getElementById('sela'+si).classList.add('show');}
+}
+
+/* ============ 8. 摘要大富翁 ============ */
+const MOQ=[
+ {t:"mc",q:"The title \u201cGoodbye, John\u201d is actually a farewell letter to what?",opts:["An old boyfriend named John","The writer's smartphone (and social media)","A teacher at school","A pet dog"],a:1,exp:"全文用寫給戀人的口吻寫給「手機／社群媒體」。John 是擬人化的對象，讀到 refresh、feed、check you throughout the day 等線索才會恍然大悟，這是本課最重要的象徵手法。"},
+ {t:"sa",q:"作者為什麼要把手機寫成「戀人 John」？請用中文說明這樣寫的效果。",exp:"擬人化與延遲揭曉（delayed reveal）：把手機寫成戀人，讀者一開始以為是分手信，讀到後面才發現真正的對象是手機，產生驚訝與幽默感；同時也諷刺現代人對手機的依賴，已經像談戀愛一樣投入時間與情感。"},
+ {t:"mc",q:"\u201cLeaving you breaks my heart because we've had such good times together.\u201d 這句用了哪一種時態？",opts:["過去簡單式","現在完成式","未來式","過去完成式"],a:1,exp:"have had 是 have + p.p. 的現在完成式，描述從過去到現在共度的美好時光（功能 C：持續／功能 B：經驗）。"},
+ {t:"mc",q:"Which sentence best shows the pattern \u201cIt is + adj. + for sb. + to VR\u201d?",opts:["It is raining outside.","It is difficult for me to focus on school.","It seems that she is tired.","It was a long letter."],a:1,exp:"It is difficult for me to focus on school. 中 it 為虛主詞，for me 點出動作者，to focus on school 才是真正的主詞。"},
+ {t:"sa",q:"Sally 在信中列出了哪些「John」帶給她的好處？請用中文寫出至少三項。",exp:"參考：①隨時都有事情可做（I always have something to do.）②任何問題都可以問，還幫她找到答案 ③介紹她認識許多新事物——新音樂、新遊戲、新知識、新朋友。"},
+ {t:"mc",q:"\u201cPlease don't take this personally.\u201d 最接近下列何者？",opts:["Please don't tell anyone.","Please don't feel offended.","Please answer me personally.","Please come in person."],a:1,exp:"take sth. personally 表「認為某事是針對個人、因而感到不悅」，所以 don't take this personally 就是「別覺得我是針對你」。"},
+ {t:"sa",q:"請用 refresh oneself with 造一個與本課主題相關的英文句子。",exp:"參考：Instead of refreshing my Facebook feed, I refresh myself with a short walk after school.（與其一直刷新臉書動態，我用放學後的散步讓自己恢復精神。）"},
+ {t:"mc",q:"下列何者最能說明 Sally 決定「分手」的主要原因？",opts:["She found a new phone.","She could not focus at school and her grades were getting worse.","Her friends deleted their accounts.","Her parents bought her a computer."],a:1,exp:"信中明說 I can't focus at school, and my grades are getting worse，並提到忽略朋友與家人，這才是她決定告別的主因。"},
+ {t:"mc",q:"\u201cWhat if they stop inviting me out?\u201d 這句表達的是什麼語氣？",opts:["得意","擔憂","憤怒","冷漠"],a:1,exp:"What if...? 表「萬一……怎麼辦」，用來表達擔憂；stop + V-ing 表停止正在做的事，她擔心朋友不再約她出去。"},
+ {t:"sa",q:"請用中文說明課文中 in fact 出現時的語用功能。",exp:"in fact 用來加強或修正前面說過的話。例如 In fact, things have been totally different since you came into my life. 是在前句之後補上更強烈、更明確的資訊，讓讀者感受到手機帶來的改變之大。"},
+ {t:"mc",q:"下列哪一句正確使用了「動名詞當主詞」？",opts:["Leaving you break my heart.","Leaving you breaks my heart.","Leave you breaks my heart.","Leaving you breaking my heart."],a:1,exp:"動名詞片語當主詞視為單數，故主要動詞用 breaks。"},
+ {t:"sa",q:"如果你要寫一封 \u201cGoodbye, ______\u201d 給生活中某個讓你分心的事物，你會寫給誰？請用中文說明理由，並寫出一句含現在完成式的英文句子。",exp:"參考：Goodbye, YouTube. 理由：我常常說看一支影片就好，結果一看就是兩小時。英文句：I have wasted too much time on short videos since I got my own phone."}
+];
+let moPos=-1,moDone=new Set(),moOrder=shuffle(MOQ.map((_,i)=>i));
+function moBoard(){
+  document.getElementById('moBoard').innerHTML=moOrder.map((qi,i)=>
+   `<div class="cell ${i===moPos?'here':''} ${moDone.has(i)?'done':''}">
+     <div>${moDone.has(i)?'✅':'💌'}</div><div>${i+1}</div><div class="mini">${MOQ[qi].t==='mc'?'選擇':'簡答'}</div></div>`).join('');
+  document.getElementById('moStat').textContent=`　已完成 ${moDone.size} / ${moOrder.length} 格`;
+}
+function moRoll(){
+  const d=1+Math.floor(Math.random()*6);
+  document.getElementById('moDice').textContent='⚀⚁⚂⚃⚄⚅'[d-1];
+  moPos=(moPos+d)%moOrder.length;moBoard();moShow();
+}
+function moShow(){
+  const qi=moOrder[moPos],q=MOQ[qi],box=document.getElementById('moQ');
+  box.style.display='block';
+  if(q.t==='mc'){
+    box.innerHTML=`<div class="tagline">第 ${moPos+1} 格 · 選擇題</div><div class="stem">${esc(q.q)}</div>
+     <div style="margin-top:8px">${q.opts.map((o,i)=>`<button class="opt" onclick="moPick(this,${i===q.a})">(${'ABCD'[i]}) ${esc(o)}</button>`).join('')}</div>
+     <div class="ans" id="moA"><b>答案：${'ABCD'[q.a]}</b><br>解析：${esc(q.exp)}</div>`;
+  }else{
+    box.innerHTML=`<div class="tagline">第 ${moPos+1} 格 · 簡答題</div><div class="stem">${esc(q.q)}</div>
+     <textarea class="ta" placeholder="寫下你的想法..."></textarea>
+     <div class="row"><button class="btn sm green" onclick="moSA()">📖 參考解答：</button></div>
+     <div class="ans" id="moA">${esc(q.exp)}</div>`;
+  }
+  box.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+function moPick(btn,ok){
+  const box=btn.parentElement;if(box.dataset.done)return;box.dataset.done=1;
+  btn.classList.add(ok?'right':'wrong');
+  if(ok){addScore(200);boom();}else{addScore(-50);
+    [...box.children].forEach(b=>{if(b.getAttribute('onclick').includes('true'))b.classList.add('right');});}
+  document.getElementById('moA').classList.add('show');
+  moDone.add(moPos);moBoard();checkWin();
+}
+function moSA(){
+  const ta=document.querySelector('#moQ textarea');
+  if(ta&&ta.value.trim().length>=10){addScore(200);boom();}else toast('先寫下你的想法再看解答，學習效果更好 ✍️');
+  document.getElementById('moA').classList.add('show');
+  moDone.add(moPos);moBoard();checkWin();
+}
+function checkWin(){if(moDone.size===moOrder.length){boom();toast('🏁 恭喜通關摘要大富翁！累計總分 '+TOTAL+' 分');}}
+moBoard();
+</script>
+</body>
+</html>
