@@ -795,13 +795,17 @@ function slotsHTML(prefix,i,parts,en){
      <button class="btn sm" onclick="checkSlots('${prefix}',${i},${parts.length},'${prefix}a${i}')">✅ 檢查</button>
      <button class="btn sm green" onclick="document.getElementById('${prefix}a${i}').classList.toggle('show')">📖 參考解答：</button>
      <span class="mini" id="${prefix}s${i}"></span>
-   </div>`;
+   </div>
+   <div class="mini" style="margin-top:4px">✍️ 提示：答案不在句首的空格必須全部小寫，寫成大寫不算正確。</div>`;
 }
 function slotMatch(key,val){
   const n2=x=>norm(x).replace(/\s*\/\s*/g,'/');
   const K=n2(key).split('/').filter(Boolean);
   const S=n2(val).split('/').filter(Boolean);
   if(!S.length)return false;
+  /* 答案首字母為小寫者（不在句首），學生一律必須寫成小寫，寫成大寫不算正確 */
+  const v=String(val).trim();
+  if(/^[a-z]/.test(String(key).trim())&&v!==v.toLowerCase())return false;
   return S.every(x=>K.indexOf(x)>-1);
 }
 function checkSlots(prefix,i,n,ansId){
@@ -1074,10 +1078,11 @@ const CZH=[
   note:"<b>句型說明</b>：instead of + V-ing 而不是做某事。<br><b>重要單字片語</b>：learn to VR 學習做某事；ignore 忽略；personal ideas 個人的想法。<br><b>文法時態</b>：should + 原形動詞表建議；instead of 為介系詞，後接動名詞 ignoring。"}
 ];
 document.getElementById('czV').innerHTML='<div class="mini" style="margin-bottom:8px">看提示字首字尾填入單字。</div>'+
- shuffle(CZV).map((p,i)=>fillQuestion(i+1,esc(p[0]),p[1],'',"czV")).join('');
+ shuffle(CZV).map((p,i)=>caseFillQuestion('czV',i+1,esc(p[0]),p[1],'',false)).join('');
 document.getElementById('czI').innerHTML=shuffle(CZI).map((p,i)=>`<div class="q"><span class="num">${i+1}</span><div class="zh">📝 ${esc(p[0])}</div><div class="stem">${esc(p[1])}</div>
+ ${needsLower(p[2])?'<div class="mini" style="margin-top:4px">✍️ 提示：此空格不在句首，答案必須全部小寫。</div>':''}
  <div class="row" style="margin-top:6px"><input class="blank" style="width:100%" id="czIi${i}" placeholder="填入完整片語（多格請用分號隔開）">
- <button class="btn sm" onclick="checkFill('czIi${i}','${p[2]}','czIa${i}')">✅ 檢查</button>
+ <button class="btn sm" onclick="checkFillCase('czI',${i},'${p[2]}')">✅ 檢查</button>
  <button class="btn sm green" onclick="document.getElementById('czIa${i}').classList.toggle('show')">📖 參考解答：</button></div>
  <div class="ans" id="czIa${i}"><b>答案：${p[2]}</b><br>解析：${p[3]}</div></div>`).join('');
 document.getElementById('czC').innerHTML=shuffle(CZC).map((q,i)=>{SLOT_KEYS['czC'+i]=q.parts;
@@ -1147,6 +1152,37 @@ function checkFillWM(idx,ans,atStart){
   el.style.borderColor=ok?'#34D399':'#F87171';
   el.style.background=ok?'#ECFDF5':'#FEF2F2';
   if(!caseOK&&spellOK)toast('⚠️ 拼字正確，但此空格不在句首，必須寫成小寫「'+ans.toLowerCase()+'」，本題不給分。');
+  if(el.dataset.done)return;el.dataset.done=1;
+  if(ok){addScore(200);boom();toast('🎉 正確！+200');}
+  else{addScore(-50);
+    if(!caseOK&&spellOK)ansEl.innerHTML='<b>答案：'+esc(ans)+'</b><br>❗大小寫錯誤：此空格不在句首，英文單字必須全部小寫，寫成大寫不算正確。<br>'+ansEl.innerHTML.split('<br>').slice(1).join('<br>');
+    ansEl.classList.add('show');}
+}
+/* 例句填空／文意字彙共用：答案首字母為小寫者（空格不在句首），
+   學生一律必須寫成小寫，寫成大寫不給分 */
+function needsLower(ans){const a=ans.split('|')[0].trim();return /^[a-z]/.test(a);}
+function caseFillQuestion(prefix,idx,stem,answer,note,wide){
+  const low=needsLower(answer);
+  const tip=low?'<div class="mini" style="margin-top:4px">✍️ 提示：此空格不在句首，答案必須全部小寫。</div>':'';
+  return `<div class="q"><span class="num">${idx}</span><span class="stem">${stem}</span>
+   ${tip}
+   <div class="row" style="margin-top:8px">
+     <input class="blank"${wide?' style="width:100%"':''} id="${prefix}i${idx}" placeholder="填入答案">
+     <button class="btn sm" onclick="checkFillCase('${prefix}',${idx},'${esc(answer).replace(/'/g,"\\'")}')">✅ 檢查</button>
+     <button class="btn sm green" onclick="document.getElementById('${prefix}a${idx}').classList.toggle('show')">📖 參考解答：</button>
+   </div>
+   <div class="ans" id="${prefix}a${idx}"><b>答案：${esc(answer)}</b>${note?'<br>解析：'+note:''}</div></div>`;
+}
+function checkFillCase(prefix,idx,ans){
+  const el=document.getElementById(prefix+'i'+idx),ansEl=document.getElementById(prefix+'a'+idx);
+  const val=(el.value||'').trim();
+  const spellOK=ans.split('|').some(a=>norm(a)===norm(val));
+  const mustLower=needsLower(ans);
+  const caseOK=mustLower?(val===val.toLowerCase()):true;
+  const ok=spellOK&&caseOK;
+  el.style.borderColor=ok?'#34D399':'#F87171';
+  el.style.background=ok?'#ECFDF5':'#FEF2F2';
+  if(!caseOK&&spellOK)toast('⚠️ 拼字正確，但此空格不在句首，必須寫成小寫「'+ans.split('|')[0].toLowerCase()+'」，本題不給分。');
   if(el.dataset.done)return;el.dataset.done=1;
   if(ok){addScore(200);boom();toast('🎉 正確！+200');}
   else{addScore(-50);
